@@ -32,9 +32,8 @@ const Footer: React.FC = () => {
               <ul className="space-y-2 text-base text-slate-600 dark:text-slate-400">
                 <li className="flex flex-col items-center md:items-end gap-1">
                   <span className="leading-relaxed">
-                    Rua Jurubatuba, 1350<br />
-                    Centro, São Bernardo do Campo<br />
-                    SP, 09725-000
+                    Rua Atlantica, 148 - Jardim do Mar<br />
+                    São Bernardo do Campo - SP, 09750-480
                   </span>
                 </li>
                 <li className="flex flex-col items-center md:items-end gap-2 mt-2">

@@ -212,12 +212,17 @@ const Treatments: React.FC = () => {
                     </p>
                   </div>
 
-                  <div className="flex items-center justify-between mt-6 pt-4 border-t border-slate-100 dark:border-slate-700">
+                  <a 
+                    href="https://wa.me/5511974736662?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-between mt-6 pt-4 border-t border-slate-100 dark:border-slate-700 cursor-pointer"
+                  >
                     <span className="text-xs font-bold text-primary tracking-wide uppercase">Saiba mais</span>
-                    <button className="w-8 h-8 rounded-full bg-slate-50 dark:bg-slate-700 flex items-center justify-center text-secondary dark:text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                    <div className="w-8 h-8 rounded-full bg-slate-50 dark:bg-slate-700 flex items-center justify-center text-secondary dark:text-primary group-hover:bg-primary group-hover:text-white transition-colors">
                       <span className="material-symbols-rounded text-lg">arrow_forward</span>
-                    </button>
-                  </div>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
