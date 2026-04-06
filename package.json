@@ -1,0 +1,11 @@
+{
+  "name": "feridas-expansao",
+  "version": "1.0.0",
+  "description": "Landing page estática para Doutor Feridas",
+  "scripts": {
+    "start": "serve ."
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}
