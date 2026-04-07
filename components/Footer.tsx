@@ -89,7 +89,7 @@ const Footer: React.FC = () => {
                   <img 
                     src="https://pub-db8ed4fb33634589a6ce5fb07e85cb46.r2.dev/logo/op7/logo.svg" 
                     alt="OP7 Franchising" 
-                    className="h-8 w-auto" 
+                    className="h-16 w-auto" 
                   />
                 </a>
               </div>
