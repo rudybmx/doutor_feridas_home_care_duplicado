@@ -101,9 +101,9 @@ const Hero: React.FC = () => {
             {/* Doctor Image */}
             <div className="relative z-10 w-full h-full rounded-t-[150px] lg:rounded-t-[250px] rounded-b-[50px] lg:rounded-b-[100px] overflow-hidden shadow-2xl shadow-blue-900/10 dark:shadow-none">
               <img
-                src="https://pub-db8ed4fb33634589a6ce5fb07e85cb46.r2.dev/landing_pages/doutorFeridas/dr%20e%20dra.png"
-                alt="Doutores Especialistas em Feridas"
-                className="w-full h-full object-cover object-center"
+                src="https://pub-db8ed4fb33634589a6ce5fb07e85cb46.r2.dev/landing_pages/doutorFeridas/Imagem01.jpg"
+                alt="Dra. Isabella - Especialista em Feridas"
+                className="w-full h-full object-cover object-top"
               />
             </div>
 
