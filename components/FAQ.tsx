@@ -3,28 +3,28 @@ import { Reveal } from './Reveal';
 
 const faqData = [
   {
-    question: "Ferida que não fecha é perigoso?",
-    answer: "Pode ser. Uma ferida persistente pode indicar causas como diabetes, má circulação ou infecção, e precisa de avaliação."
+    question: "Como funciona o curativo domiciliar do Doutor Feridas Home Care?",
+    answer: "Nossa equipe especializada vai até sua residência, realiza uma avaliação completa da ferida e define o melhor tratamento utilizando tecnologias avançadas como laserterapia e curativos especiais."
   },
   {
-    question: "Se eu não sinto muita dor, ainda assim devo tratar?",
-    answer: "Sim. Em diabéticos, por exemplo, a dor pode ser menor e ainda assim haver risco de complicações."
+    question: "Quanto custa o atendimento domiciliar de feridas?",
+    answer: "O valor varia de acordo com o tipo de lesão e o tratamento necessário. Entre em contato conosco para agendarmos uma avaliação."
   },
   {
-    question: "Posso tratar só com curativo comum em casa?",
-    answer: "Em casos leves, pode ajudar. Mas feridas persistentes e em perfis de risco precisam de cuidado especializado."
+    question: "Vocês atendem em qual região?",
+    answer: "Atendemos nas regiões próximas às nossas unidades. Entre em contato via WhatsApp para confirmar se o seu endereço é atendido pela nossa equipe de Home Care."
   },
   {
-    question: "Em quanto tempo melhora?",
-    answer: "Depende da causa, do tipo de ferida e do estágio. O objetivo é acelerar e conduzir a cicatrização com segurança."
+    question: "O plano de saúde cobre o tratamento domiciliar de feridas?",
+    answer: "Trabalhamos na modalidade particular, mas emitimos nota fiscal para que você possa solicitar o reembolso junto ao seu convênio, caso ele ofereça essa opção."
   },
   {
-    question: "Quem mais precisa ter atenção?",
-    answer: "Idosos, diabéticos e pessoas com problemas circulatórios devem procurar avaliação ao primeiro sinal."
+    question: "Em quanto tempo consigo agendar o primeiro atendimento?",
+    answer: "Nossa equipe tem como prioridade a agilidade. Assim que entrar em contato, buscaremos o horário mais próximo possível na nossa agenda para iniciar seu tratamento."
   },
   {
-    question: "Como agendo?",
-    answer: "Pelo WhatsApp da unidade. É rápido e direto."
+    question: "O curativo domiciliar funciona para feridas complexas como pé diabético e escara?",
+    answer: "Sim. Nossos protocolos e as tecnologias utilizadas (como laser e coberturas inteligentes) são exatamente desenvolvidos para lidar com feridas crônicas e de difícil cicatrização."
   }
 ];
 
@@ -43,11 +43,14 @@ const FAQ: React.FC = () => {
         <div className="text-center mb-8 lg:mb-12">
           <Reveal>
             <span className="inline-block px-4 py-1.5 mb-4 rounded-full bg-primary/10 text-primary border border-primary/20 text-xs font-bold tracking-wide uppercase shadow-sm">
-              Tira-Dúvidas
+              FAQ
             </span>
             <h2 className="text-3xl md:text-4xl font-extrabold text-secondary dark:text-white mb-4">
-              Perguntas Frequentes
+              Dúvidas sobre curativo domiciliar e atendimento em casa
             </h2>
+            <p className="text-slate-600 dark:text-slate-400 text-sm md:text-base mb-2">
+              As perguntas mais frequentes de quem está considerando o tratamento de feridas em casa.
+            </p>
           </Reveal>
         </div>
 

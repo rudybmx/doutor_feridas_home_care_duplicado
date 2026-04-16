@@ -12,7 +12,7 @@ const Header: React.FC<HeaderProps> = ({ isDark, toggleTheme }) => {
         {/* Logo */}
         <div className="flex items-center gap-2">
           <img 
-            src="https://docs.qozt.com.br/landing_pages/doutorFeridas/logoDoutorFeridas.png" 
+            src="https://pub-db8ed4fb33634589a6ce5fb07e85cb46.r2.dev/landing_pages/doutorFeridas/logo_doutor_feridas_home_care.png" 
             alt="Doutor Feridas" 
             className="h-8 md:h-12 w-auto object-contain"
           />
@@ -21,10 +21,9 @@ const Header: React.FC<HeaderProps> = ({ isDark, toggleTheme }) => {
         {/* Navigation - Desktop */}
         <div className="hidden lg:flex items-center gap-8 text-sm font-semibold text-slate-600 dark:text-slate-300">
           <a href="#" className="hover:text-primary transition-colors">Início</a>
-          <a href="#sobre" className="hover:text-primary transition-colors">Sobre</a>
           <a href="#tratamentos" className="hover:text-primary transition-colors">Tratamentos</a>
-          <a href="#pacientes" className="hover:text-primary transition-colors">Pacientes</a>
-          <a href="#faq" className="hover:text-primary transition-colors">Dúvidas</a>
+          <a href="#diferenciais" className="hover:text-primary transition-colors">Diferenciais</a>
+          <a href="#faq" className="hover:text-primary transition-colors">FAQ</a>
         </div>
 
         {/* Actions */}
@@ -60,7 +59,7 @@ const Header: React.FC<HeaderProps> = ({ isDark, toggleTheme }) => {
             border-t border-white/20
             text-xs md:text-sm
           ">
-            <span className="relative z-10 hidden md:inline">Agendar Consulta</span>
+            <span className="relative z-10 hidden md:inline">Agendar visita</span>
             <span className="relative z-10 md:hidden">Agendar</span>
             <span className="material-symbols-rounded relative z-10 text-sm group-hover:translate-x-1 transition-transform">arrow_outward</span>
             

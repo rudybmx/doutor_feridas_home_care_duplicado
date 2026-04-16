@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import About from './components/About';
-import AlertSigns from './components/AlertSigns';
 import HowItWorks from './components/HowItWorks';
+import AlertSigns from './components/AlertSigns';
+import Features from './components/Features';
 import Treatments from './components/Treatments';
-import Patients from './components/Patients';
-import FAQ from './components/FAQ';
 import Marquee from './components/Marquee';
+import Patients from './components/Patients';
+import About from './components/About';
+import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 
 function App() {
@@ -29,14 +30,15 @@ function App() {
       <Header isDark={isDark} toggleTheme={toggleTheme} />
       <main className="hero-gradient relative overflow-hidden pt-28">
         <Hero />
-        <About />
-        <AlertSigns />
         <HowItWorks />
+        <AlertSigns />
+        <Features />
         <Treatments />
+        <Marquee />
         <Patients />
+        <About />
         <FAQ />
       </main>
-      <Marquee />
       <Footer />
     </div>
   );

@@ -15,19 +15,9 @@ const Patients: React.FC = () => {
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-8">
             <div className="max-w-3xl">
               <Reveal>
-                <span className="inline-block px-4 py-1.5 mb-6 rounded-full bg-white/10 text-white border border-white/20 text-sm font-bold tracking-wide uppercase shadow-sm">
-                  Pacientes
-                </span>
                 <h2 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
-                  PARA QUEM É O <br className="hidden sm:block"/> TRATAMENTO?
+                  O Doutor Feridas Home Care é para você
                 </h2>
-              </Reveal>
-            </div>
-            <div className="max-w-lg md:text-right md:pb-2">
-              <Reveal delay={200}>
-                <p className="text-lg text-blue-100 leading-relaxed font-medium">
-                  Nossa abordagem especializada é projetada para resolver casos complexos onde tratamentos convencionais falharam.
-                </p>
               </Reveal>
             </div>
           </div>
@@ -36,96 +26,79 @@ const Patients: React.FC = () => {
         {/* Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           
-          {/* Card 1: Idosos */}
           <Reveal delay={0} className="h-full">
-            <div className="group flex flex-col h-full bg-white/5 border border-white/10 rounded-[2rem] overflow-hidden shadow-lg hover:shadow-xl hover:bg-white/10 transition-all duration-300 hover:-translate-y-1 p-8">
+            <div className="group flex flex-col h-full bg-white/5 border border-white/10 rounded-[2rem] overflow-hidden shadow-lg hover:shadow-xl hover:bg-white transition-all duration-300 hover:-translate-y-1 p-8">
               <div className="flex flex-col flex-grow">
-                <div className="flex flex-wrap gap-2 mb-6">
-                  <span className="px-3 py-1 text-xs font-bold rounded-md bg-white/10 text-white border border-white/10">Sênior</span>
-                  <span className="px-3 py-1 text-xs font-bold rounded-md bg-blue-500/20 text-blue-200 border border-blue-500/20">Cuidado Especial</span>
-                </div>
                 <div className="mb-4">
-                   <span className="material-symbols-rounded text-4xl text-primary mb-4 block">elderly</span>
-                   <h3 className="text-2xl font-bold text-white group-hover:text-primary transition-colors">Pacientes Idosos</h3>
+                   <h3 className="text-2xl font-bold text-white group-hover:text-secondary transition-colors">Ferida que não cicatriza</h3>
                 </div>
-                <p className="text-blue-100/80 leading-relaxed flex-grow">
-                  Pele fragilizada que requer atenção redobrada e técnicas não-invasivas para acelerar a cicatrização sem causar dor adicional.
+                <p className="text-blue-100/80 group-hover:text-slate-600 leading-relaxed flex-grow transition-colors">
+                  Ferida aberta há mais de 2 semanas sem melhora, mesmo com curativo convencional.
                 </p>
               </div>
             </div>
           </Reveal>
 
-          {/* Card 2: Diabéticos */}
           <Reveal delay={100} className="h-full">
-            <div className="group flex flex-col h-full bg-white/5 border border-white/10 rounded-[2rem] overflow-hidden shadow-lg hover:shadow-xl hover:bg-white/10 transition-all duration-300 hover:-translate-y-1 p-8">
+            <div className="group flex flex-col h-full bg-white/5 border border-white/10 rounded-[2rem] overflow-hidden shadow-lg hover:shadow-xl hover:bg-white transition-all duration-300 hover:-translate-y-1 p-8">
               <div className="flex flex-col flex-grow">
-                <div className="flex flex-wrap gap-2 mb-6">
-                  <span className="px-3 py-1 text-xs font-bold rounded-md bg-white/10 text-white border border-white/10">Diabetes</span>
-                  <span className="px-3 py-1 text-xs font-bold rounded-md bg-emerald-500/20 text-emerald-200 border border-emerald-500/20">Pé Diabético</span>
-                </div>
                 <div className="mb-4">
-                   <span className="material-symbols-rounded text-4xl text-emerald-400 mb-4 block">glucose</span>
-                   <h3 className="text-2xl font-bold text-white group-hover:text-emerald-400 transition-colors">Pacientes Diabéticos</h3>
+                   <h3 className="text-2xl font-bold text-white group-hover:text-secondary transition-colors">Pé diabético</h3>
                 </div>
-                <p className="text-blue-100/80 leading-relaxed flex-grow">
-                  Tratamento focado na prevenção de amputações e controle rigoroso de infecções em úlceras de difícil cicatrização.
+                <p className="text-blue-100/80 group-hover:text-slate-600 leading-relaxed flex-grow transition-colors">
+                  Diabetes e uma ferida nos pés ou pernas que não demonstra sinais de cicatrização.
                 </p>
               </div>
             </div>
           </Reveal>
 
-          {/* Card 3: Problemas Circulatórios */}
           <Reveal delay={200} className="h-full">
-            <div className="group flex flex-col h-full bg-white/5 border border-white/10 rounded-[2rem] overflow-hidden shadow-lg hover:shadow-xl hover:bg-white/10 transition-all duration-300 hover:-translate-y-1 p-8">
+            <div className="group flex flex-col h-full bg-white/5 border border-white/10 rounded-[2rem] overflow-hidden shadow-lg hover:shadow-xl hover:bg-white transition-all duration-300 hover:-translate-y-1 p-8">
               <div className="flex flex-col flex-grow">
-                <div className="flex flex-wrap gap-2 mb-6">
-                  <span className="px-3 py-1 text-xs font-bold rounded-md bg-white/10 text-white border border-white/10">Circulação</span>
-                  <span className="px-3 py-1 text-xs font-bold rounded-md bg-red-500/20 text-red-200 border border-red-500/20">Vascular</span>
-                </div>
                 <div className="mb-4">
-                   <span className="material-symbols-rounded text-4xl text-red-400 mb-4 block">bloodtype</span>
-                   <h3 className="text-2xl font-bold text-white group-hover:text-red-400 transition-colors">Problemas Circulatórios</h3>
+                   <h3 className="text-2xl font-bold text-white group-hover:text-secondary transition-colors">Mobilidade reduzida</h3>
                 </div>
-                <p className="text-blue-100/80 leading-relaxed flex-grow">
-                  Soluções para úlceras venosas e arteriais, focando na melhoria do fluxo sanguíneo local e regeneração tecidual.
+                <p className="text-blue-100/80 group-hover:text-slate-600 leading-relaxed flex-grow transition-colors">
+                  Dificuldade de locomoção que torna deslocamentos ao hospital um desafio.
                 </p>
               </div>
             </div>
           </Reveal>
 
-          {/* Card 4: Feridas Crônicas */}
           <Reveal delay={300} className="h-full">
-            <div className="group flex flex-col h-full bg-white/5 border border-white/10 rounded-[2rem] overflow-hidden shadow-lg hover:shadow-xl hover:bg-white/10 transition-all duration-300 hover:-translate-y-1 p-8">
+            <div className="group flex flex-col h-full bg-white/5 border border-white/10 rounded-[2rem] overflow-hidden shadow-lg hover:shadow-xl hover:bg-white transition-all duration-300 hover:-translate-y-1 p-8">
               <div className="flex flex-col flex-grow">
-                <div className="flex flex-wrap gap-2 mb-6">
-                  <span className="px-3 py-1 text-xs font-bold rounded-md bg-white/10 text-white border border-white/10">Crônico</span>
-                  <span className="px-3 py-1 text-xs font-bold rounded-md bg-purple-500/20 text-purple-200 border border-purple-500/20">Longa Duração</span>
-                </div>
                 <div className="mb-4">
-                   <span className="material-symbols-rounded text-4xl text-purple-400 mb-4 block">history</span>
-                   <h3 className="text-2xl font-bold text-white group-hover:text-purple-400 transition-colors">Feridas Crônicas</h3>
+                   <h3 className="text-2xl font-bold text-white group-hover:text-secondary transition-colors">Cuidador familiar</h3>
                 </div>
-                <p className="text-blue-100/80 leading-relaxed flex-grow">
-                  Para lesões que persistem há meses ou anos, utilizamos terapias regenerativas avançadas para reativar a cicatrização.
+                <p className="text-blue-100/80 group-hover:text-slate-600 leading-relaxed flex-grow transition-colors">
+                  Cuida de idoso ou familiar acamado com ferida em casa e precisa de suporte especializado.
                 </p>
               </div>
             </div>
           </Reveal>
 
-          {/* Card 5: Falha em Tratamentos Anteriores (Double Width) */}
-          <Reveal delay={400} className="md:col-span-2 lg:col-span-2 h-full">
-            <div className="group flex flex-col h-full bg-white/5 border border-white/10 rounded-[2rem] overflow-hidden shadow-lg hover:shadow-xl hover:bg-white/10 transition-all duration-300 hover:-translate-y-1 p-8">
+          <Reveal delay={400} className="h-full">
+            <div className="group flex flex-col h-full bg-white/5 border border-white/10 rounded-[2rem] overflow-hidden shadow-lg hover:shadow-xl hover:bg-white transition-all duration-300 hover:-translate-y-1 p-8">
               <div className="flex flex-col justify-center h-full">
-                <div className="flex flex-wrap gap-2 mb-6">
-                  <span className="px-3 py-1 text-xs font-bold rounded-md bg-white/10 text-white border border-white/10">Recuperação</span>
-                  <span className="px-3 py-1 text-xs font-bold rounded-md bg-orange-500/20 text-orange-200 border border-orange-500/20">Segunda Opinião</span>
-                </div>
                 <div className="mb-4">
-                    <span className="material-symbols-rounded text-4xl text-orange-400 mb-4 block">medical_services</span>
-                    <h3 className="text-2xl font-bold text-white group-hover:text-orange-400 transition-colors">Falha em Tratamentos Anteriores</h3>
+                    <h3 className="text-2xl font-bold text-white group-hover:text-secondary transition-colors">Evitar hospitalizações</h3>
                 </div>
-                <p className="text-blue-100/80 leading-relaxed max-w-2xl">
-                  Especializados em casos onde pomadas comuns e curativos simples não funcionaram. Oferecemos uma nova perspectiva clínica e tecnológica para o seu caso, focando no que realmente impede o fechamento da lesão.
+                <p className="text-blue-100/80 group-hover:text-slate-600 leading-relaxed flex-grow transition-colors">
+                  Quer evitar idas frequentes ao hospital ou clínica para curativos periódicos.
+                </p>
+              </div>
+            </div>
+          </Reveal>
+
+          <Reveal delay={500} className="h-full">
+            <div className="group flex flex-col h-full bg-white/5 border border-white/10 rounded-[2rem] overflow-hidden shadow-lg hover:shadow-xl hover:bg-white transition-all duration-300 hover:-translate-y-1 p-8">
+              <div className="flex flex-col justify-center h-full">
+                <div className="mb-4">
+                    <h3 className="text-2xl font-bold text-white group-hover:text-secondary transition-colors">Sem resultado anterior</h3>
+                </div>
+                <p className="text-blue-100/80 group-hover:text-slate-600 leading-relaxed flex-grow transition-colors">
+                  Já fez tratamento em outros lugares e não obteve resultado satisfatório.
                 </p>
               </div>
             </div>
@@ -137,8 +110,8 @@ const Patients: React.FC = () => {
         <Reveal delay={600}>
           <div className="mt-12 lg:mt-24 text-center">
             <div className="inline-flex flex-col items-center max-w-2xl mx-auto">
-              <p className="text-xl md:text-2xl font-semibold text-white mb-8">
-                Se você está aqui, provavelmente já passou do ponto de esperar.
+              <p className="text-xl md:text-2xl font-semibold text-white mb-8 leading-relaxed">
+                Se você se identificou, seu próximo passo é simples: entre em contato e a nossa equipe cuida do resto. <br/><strong className="font-bold">A primeira avaliação é gratuita.</strong>
               </p>
               <a 
                 className="

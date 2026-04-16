@@ -14,24 +14,21 @@ const Hero: React.FC = () => {
           <Reveal delay={100}>
             <div className="inline-flex items-center gap-2 bg-white/80 dark:bg-slate-800/80 px-4 py-1.5 rounded-full border border-slate-200 dark:border-slate-700 mb-6 shadow-sm">
               <span className="material-symbols-rounded text-accent text-lg">medical_services</span>
-              <span className="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">Clínica Especializada</span>
+              <span className="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">Avaliação gratuita</span>
             </div>
           </Reveal>
 
           <Reveal delay={200}>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-black leading-tight md:leading-[1.1] mb-4 md:mb-6 text-secondary dark:text-white">
-              <span className="block text-secondary dark:text-white uppercase tracking-tighter font-inter font-black">
-                Doutor Feridas
-              </span>
-              <span className="block text-primary mt-2 text-2xl md:text-3xl lg:text-4xl font-extrabold tracking-normal">
-                Tratamento especializado para feridas que não cicatrizam
+              <span className="block text-secondary dark:text-white tracking-tighter font-inter font-black">
+                Tratamento especializado de <span className="text-accent font-black">feridas crônicas</span> na sua casa.
               </span>
             </h1>
           </Reveal>
 
           <Reveal delay={300}>
             <p className="text-base md:text-lg text-slate-600 dark:text-slate-400 mb-6 md:mb-8 max-w-md leading-relaxed">
-              Clínica de feridas em São Bernardo do Campo, com atendimento da Dra. Isabella, especialista em cuidado contínuo até a cicatrização.
+              Sem sair de casa. Sem fila. Sem hospital. Nosso <strong className="font-bold">enfermeiro especialista</strong> vai até você com <strong className="font-bold">tecnologia laser</strong>, curativos avançados e o protocolo validado pelo Doutor Feridas.
             </p>
           </Reveal>
 
@@ -57,7 +54,7 @@ const Hero: React.FC = () => {
                 flex items-center justify-center gap-3
                 border-t border-white/20
               ">
-                <span className="relative z-10">Agendar Avaliação</span>
+                <span className="relative z-10">Solicitar Atendimento</span>
                 <span className="material-symbols-rounded relative z-10 group-hover:translate-x-1 transition-transform">arrow_forward</span>
                 {/* Shine effect overlay */}
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
@@ -83,9 +80,9 @@ const Hero: React.FC = () => {
                 </div>
                 <div className="flex flex-col justify-center leading-tight">
                    <div className="flex items-center gap-1">
-                      <span className="text-xs font-bold text-secondary dark:text-white">Milhares de</span>
+                      <span className="text-xs font-bold text-secondary dark:text-white">Atendimento de</span>
                    </div>
-                   <span className="text-xs font-medium text-slate-500 dark:text-slate-400">pacientes recuperados</span>
+                   <span className="text-xs font-medium text-slate-500 dark:text-slate-400">excelência no conforto do lar.</span>
                 </div>
               </div>
             </div>
@@ -101,8 +98,8 @@ const Hero: React.FC = () => {
             {/* Doctor Image */}
             <div className="relative z-10 w-full h-full rounded-t-[150px] lg:rounded-t-[250px] rounded-b-[50px] lg:rounded-b-[100px] overflow-hidden shadow-2xl shadow-blue-900/10 dark:shadow-none">
               <img
-                src="https://pub-db8ed4fb33634589a6ce5fb07e85cb46.r2.dev/landing_pages/doutorFeridas/Imagem01.jpg"
-                alt="Dra. Isabella - Especialista em Feridas"
+                src="https://pub-db8ed4fb33634589a6ce5fb07e85cb46.r2.dev/landing_pages/doutorFeridas/doutora_home_care.png"
+                alt="Dra. Janinéri Cordeiro - Especialista em Home Care"
                 className="w-full h-full object-cover object-top"
               />
             </div>

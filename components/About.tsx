@@ -16,9 +16,9 @@ const About: React.FC = () => {
             <Reveal direction="left">
               <div className="relative rounded-4xl overflow-hidden shadow-2xl shadow-blue-900/10 dark:shadow-none h-[350px] lg:h-[500px] w-full group transition-all duration-500 hover:scale-[1.02] hover:shadow-primary/20">
                 <img 
-                  alt="Modern medical facility in São Bernardo do Campo" 
+                  alt="Van do Doutor Feridas para atendimento domiciliar" 
                   className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110" 
-                  src="https://docs.qozt.com.br/landing_pages/doutorFeridas/fachadaDoutorFeridas.png"
+                  src="https://pub-db8ed4fb33634589a6ce5fb07e85cb46.r2.dev/landing_pages/doutorFeridas/van_doutor_feridas.png"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-secondary/40 to-transparent mix-blend-overlay"></div>
               </div>
@@ -37,7 +37,7 @@ const About: React.FC = () => {
                   
                   <div className="pt-3 border-t border-slate-200 dark:border-slate-600">
                     <p className="text-sm font-semibold text-slate-700 dark:text-slate-200 leading-tight">
-                        Comprometidos com sua cicatrização e bem-estar.
+                        O tempo é crucial no tratamento de feridas crônicas.
                     </p>
                   </div>
                 </div>
@@ -49,21 +49,21 @@ const About: React.FC = () => {
           <div className="lg:col-span-6 lg:pl-10">
             <Reveal delay={100}>
               <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-primary/10 text-primary dark:text-primary font-bold text-xs uppercase tracking-wider mb-6 shadow-sm">
-                  Sobre Nós
+                  A GENTE VAI ATÉ VOCÊ
               </div>
             </Reveal>
             <Reveal delay={200}>
               <h2 className="text-3xl lg:text-5xl font-extrabold text-secondary dark:text-white mb-6 leading-tight">
-                  DOR, INCÔMODO OU <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">LIMITAÇÃO?</span>
+                  Não espera a ferida piorar para <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">buscar ajuda</span>
               </h2>
             </Reveal>
             <Reveal delay={300}>
               <div className="space-y-4 text-slate-600 dark:text-slate-300 text-lg leading-relaxed mb-10">
                 <p>
-                    Feridas crônicas não são apenas machucados na pele; são sinais de alerta. Muitas vezes, elas se recusam a cicatrizar sozinhas devido a causas ocultas e complexas, como diabetes descompensada ou problemas sérios de circulação.
+                    Feridas crônicas pioram com o tempo. O <strong className="text-secondary dark:text-white font-semibold">tratamento precoce domiciliar</strong> muda completamente o prognóstico, e é mais simples do que você imagina.
                 </p>
                 <p>
-                    Esperar o tempo passar pode agravar o quadro. Na nossa clínica em <strong className="text-secondary dark:text-white font-semibold">São Bernardo do Campo</strong>, utilizamos tecnologia regenerativa de ponta para identificar a raiz do problema e proporcionar o alívio que você busca.
+                    Nossa equipe está a uma mensagem de distância.
                 </p>
               </div>
             </Reveal>
@@ -91,7 +91,7 @@ const About: React.FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                    <span className="relative z-10">Falar com a equipe</span>
+                    <span className="relative z-10">Agendar visita agora</span>
                     <span className="material-symbols-rounded relative z-10 group-hover:translate-x-1 transition-transform text-2xl">arrow_forward</span>
                     {/* Shine effect overlay */}
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>

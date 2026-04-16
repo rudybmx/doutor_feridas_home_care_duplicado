@@ -8,20 +8,20 @@ const treatmentsData = [
     image: "https://docs.qozt.com.br/landing_pages/doutorFeridas/Imagem03_feridas_cronicas.webp"
   },
   {
-    title: "Feridas em Diabéticos",
-    description: "Pé diabético e risco de complicações.",
+    title: "Pé Diabético",
+    description: "Curativos avançados para o pé diabético.",
     icon: "glucose",
     image: "https://docs.qozt.com.br/landing_pages/doutorFeridas/Imagem05_feridas_diabeticos.jpeg"
   },
   {
     title: "Feridas por Má Circulação",
-    description: "Tratamento especializado vascular.",
+    description: "Úlceras venosas e arteriais tratadas com as melhores tecnologias.",
     icon: "bloodtype",
     image: "https://docs.qozt.com.br/landing_pages/doutorFeridas/Imagem06_feridas_macirculacao.webp"
   },
   {
     title: "Feridas Pós-Cirúrgicas",
-    description: "E de difícil cicatrização.",
+    description: "Acompanhamento seguro para uma recuperação cirúrgica em casa.",
     icon: "medical_services",
     image: "https://docs.qozt.com.br/landing_pages/doutorFeridas/Imagem07_feridas_p%C3%B3s_cirurgia.jpg"
   },
@@ -148,15 +148,15 @@ const Treatments: React.FC = () => {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8">
           <div className="md:w-2/3">
             <span className="inline-block bg-primary/10 text-primary px-4 py-1.5 rounded-full text-xs font-bold tracking-wider uppercase mb-4 shadow-sm border border-primary/20">
-              Tratamentos
+              ESPECIALIDADES CLÍNICAS
             </span>
             <h2 className="text-3xl md:text-5xl font-extrabold text-secondary dark:text-white leading-tight uppercase">
-              Tratamentos para feridas em <br className="hidden md:block"/> São Bernardo do Campo
+              Feridas que tratamos <br className="hidden md:block"/> em casa
             </h2>
           </div>
           <div className="md:w-1/3">
             <p className="text-slate-600 dark:text-slate-400 text-sm md:text-base leading-relaxed font-medium">
-              Atendemos diferentes tipos de lesões, com foco em cicatrização e prevenção de complicações.
+              Oferecemos tecnologia avançada e cuidados humanizados no conforto do seu lar, garantindo protocolos hospitalares com a segurança de uma equipe especializada.
             </p>
           </div>
         </div>
