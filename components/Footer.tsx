@@ -38,12 +38,12 @@ const Footer: React.FC = () => {
                 </li>
                 <li className="flex flex-col items-center md:items-end gap-2 mt-2">
                   <a 
-                    href="https://wa.me/5511997092521"
+                    href="https://wa.me/5511970925217"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 font-semibold text-secondary dark:text-blue-300 hover:text-primary transition-colors text-lg"
                   >
-                    (11) 99709-2521
+                    (11) 97092-5217
                     <span className="material-symbols-rounded text-accent text-lg">chat</span>
                   </a>
                   <a 

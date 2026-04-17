@@ -99,7 +99,7 @@ const FAQ: React.FC = () => {
         <Reveal delay={600} direction="up">
           <div className="mt-12 text-center">
             <a 
-              href="https://wa.me/5511974736662?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o" 
+              href="https://wa.me/5511970925217?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o" 
               target="_blank"
               rel="noopener noreferrer"
               className="
