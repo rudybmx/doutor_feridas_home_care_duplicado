@@ -26,32 +26,32 @@ const Footer: React.FC = () => {
             {/* Column 1: Address */}
             <div className="flex flex-col items-center md:items-end text-center md:text-right">
               <h4 className="text-secondary dark:text-white font-bold mb-4 flex items-center gap-2 text-xl">
-                Unidade SBC
+                Home Care
                 <span className="material-symbols-rounded text-accent text-2xl">location_on</span>
               </h4>
               <ul className="space-y-2 text-base text-slate-600 dark:text-slate-400">
                 <li className="flex flex-col items-center md:items-end gap-1">
                   <span className="leading-relaxed">
-                    Rua Atlantica, 148 - Jardim do Mar<br />
-                    São Bernardo do Campo - SP, 09750-480
+                    Rua Vereador Jaír Salvarani, 240 - Vila Oliveira<br />
+                    Mogi das Cruzes - SP, CEP 08790-020
                   </span>
                 </li>
                 <li className="flex flex-col items-center md:items-end gap-2 mt-2">
                   <a 
-                    href="https://wa.me/5511974736662?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o"
+                    href="https://wa.me/5511997092521"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 font-semibold text-secondary dark:text-blue-300 hover:text-primary transition-colors text-lg"
                   >
-                    (11) 97473-6662
+                    (11) 99709-2521
                     <span className="material-symbols-rounded text-accent text-lg">chat</span>
                   </a>
                   <a 
                     id="email"
-                    href="mailto:contato@doutorferidas.com.br"
+                    href="mailto:Homecare.mcz@doutorferidas.com.br"
                     className="email flex items-center gap-2 font-semibold text-secondary dark:text-blue-300 hover:text-primary transition-colors text-base"
                   >
-                    contato@doutorferidas.com.br
+                    Homecare.mcz@doutorferidas.com.br
                     <span className="material-symbols-rounded text-accent text-lg">mail</span>
                   </a>
                 </li>
@@ -82,20 +82,17 @@ const Footer: React.FC = () => {
             <p>
               © 2026 Doutor Feridas | Todos os direitos reservados.
             </p>
-            <div className="flex items-center gap-6">
-              <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2">
                 <span>Desenvolvido por</span>
                 <a href="https://op7franchising.com.br" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
                   <img 
                     src="https://pub-db8ed4fb33634589a6ce5fb07e85cb46.r2.dev/logo/op7/logo.svg" 
                     alt="OP7 Franchising" 
-                    className="h-16 w-auto" 
+                    className="h-12 w-auto" 
                   />
                 </a>
               </div>
-              <a href="#" className="hover:text-secondary dark:hover:text-slate-300 transition-colors">Privacidade</a>
             </div>
-          </div>
         </footer>
       </Reveal>
     </div>

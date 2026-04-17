@@ -27,7 +27,7 @@ const AlertSigns: React.FC = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12 lg:mb-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mb-12 lg:mb-20">
         
         {/* Card 1 */}
         <Reveal delay={0} className="h-full">
