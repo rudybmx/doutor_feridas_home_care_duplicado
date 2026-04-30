@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
           {/* Brand Header */}
           <div className="flex flex-col items-center justify-center mb-6 relative z-10">
             <img 
-              src="https://pub-db8ed4fb33634589a6ce5fb07e85cb46.r2.dev/landing_pages/doutorFeridas/logo_doutor_feridas_home_care.png" 
+              src="https://pub-db8ed4fb33634589a6ce5fb07e85cb46.r2.dev/landing_pages/doutorFeridas/logoDoutorFeridas.png" 
               alt="Doutor Feridas" 
               className="h-16 md:h-24 w-auto object-contain mb-2"
             />

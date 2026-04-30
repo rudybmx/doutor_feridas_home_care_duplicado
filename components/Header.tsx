@@ -21,7 +21,7 @@ const Header: React.FC<HeaderProps> = ({ isDark, toggleTheme }) => {
         {/* Logo */}
         <div className="flex items-center gap-2">
           <img 
-            src="https://pub-db8ed4fb33634589a6ce5fb07e85cb46.r2.dev/landing_pages/doutorFeridas/logo_doutor_feridas_home_care.png" 
+            src="https://pub-db8ed4fb33634589a6ce5fb07e85cb46.r2.dev/landing_pages/doutorFeridas/logoDoutorFeridas.png" 
             alt="Doutor Feridas" 
             className="h-8 md:h-12 w-auto object-contain flex-shrink-0"
           />

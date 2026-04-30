@@ -17,7 +17,7 @@ const Specialist: React.FC = () => {
             <div className="relative z-10 max-w-4xl mx-auto">
               <p className="pw-bio text-base md:text-lg text-slate-600 dark:text-slate-400 leading-[1.8] md:leading-[2] text-justify font-normal tracking-tight">
                 <span className="block mb-6 text-indent-12">
-                  Enfermeira com doutorado em Psicogerontologia e Ciências do Envelhecimento, <strong className="text-secondary dark:text-white font-bold">Patrícia Wunden</strong> acumula mais de 8 anos como docente universitária e formação prática em UTI, Dermatologia e Medicina Ortomolecular. 
+                  Enfermeira com doutorado em Psicogerontologia e Ciências do Envelhecimento, <strong className="text-secondary dark:text-white font-bold not-italic">Dra. Janinéri Cordeiro</strong> acumula mais de 8 anos como docente universitária e formação prática em UTI, Dermatologia e Medicina Ortomolecular. 
                 </span>
                 
                 <span className="block mb-6 text-indent-12">

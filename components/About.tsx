@@ -14,10 +14,10 @@ const About: React.FC = () => {
           {/* Image Column */}
           <div className="lg:col-span-6 relative">
             <Reveal direction="left">
-              <div className="relative rounded-4xl overflow-hidden shadow-2xl shadow-blue-900/10 dark:shadow-none h-[350px] lg:h-[500px] w-full group transition-all duration-500 hover:scale-[1.02] hover:shadow-primary/20">
+              <div className="relative rounded-4xl overflow-hidden shadow-2xl shadow-blue-900/10 dark:shadow-none h-[450px] lg:h-[650px] w-full group transition-all duration-500 hover:scale-[1.02] hover:shadow-primary/20">
                 <img 
-                  alt="Especialista em Tratamento de Feridas" 
-                  className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110" 
+                  alt="Dra. Janinéri Cordeiro - Especialista em Tratamento de Feridas" 
+                  className="w-full h-full object-cover object-top transform transition-transform duration-700 group-hover:scale-110" 
                   src="https://pub-db8ed4fb33634589a6ce5fb07e85cb46.r2.dev/landing_pages/doutorFeridas/doutora_home_care.png"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-secondary/40 to-transparent mix-blend-overlay"></div>
@@ -32,7 +32,7 @@ const About: React.FC = () => {
                     <div className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-white shadow-lg shrink-0">
                       <span className="material-symbols-rounded text-xl">medical_services</span>
                     </div>
-                    <span className="text-[10px] font-bold tracking-wider text-slate-500 dark:text-slate-300 uppercase bg-white/50 dark:bg-black/20 px-2 py-1 rounded whitespace-nowrap">Doutor Feridas</span>
+                    <span className="text-[10px] font-bold tracking-wider text-slate-500 dark:text-slate-300 uppercase bg-white/50 dark:bg-black/20 px-2 py-1 rounded whitespace-nowrap">Dra. Janinéri Cordeiro</span>
                   </div>
                   
                   <div className="pt-3 border-t border-slate-200 dark:border-slate-600">
@@ -60,7 +60,7 @@ const About: React.FC = () => {
             <Reveal delay={300}>
               <div className="space-y-4 text-slate-600 dark:text-slate-300 text-lg leading-relaxed mb-10">
                 <p>
-                    Enfermeira com doutorado em Psicogerontologia e Ciências do Envelhecimento, <strong className="text-secondary dark:text-white font-bold">Patrícia Wunden</strong> acumula mais de 8 anos como docente universitária e formação prática em UTI, Dermatologia e Medicina Ortomolecular.
+                    Enfermeira com doutorado em Psicogerontologia e Ciências do Envelhecimento, <strong className="text-secondary dark:text-white font-bold">Dra. Janinéri Cordeiro</strong> acumula mais de 8 anos como docente universitária e formação prática em UTI, Dermatologia e Medicina Ortomolecular.
                 </p>
                 <p>
                     Fundadora do Wunden Institut, desenvolveu uma abordagem única que une ciência do envelhecimento, comportamento humano e cuidado integral, aplicada tanto em consultório quanto em programas de treinamento no Brasil e na Europa.
