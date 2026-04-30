@@ -16,9 +16,9 @@ const About: React.FC = () => {
             <Reveal direction="left">
               <div className="relative rounded-4xl overflow-hidden shadow-2xl shadow-blue-900/10 dark:shadow-none h-[350px] lg:h-[500px] w-full group transition-all duration-500 hover:scale-[1.02] hover:shadow-primary/20">
                 <img 
-                  alt="Van do Doutor Feridas para atendimento domiciliar" 
+                  alt="Especialista em Tratamento de Feridas" 
                   className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110" 
-                  src="https://pub-db8ed4fb33634589a6ce5fb07e85cb46.r2.dev/landing_pages/doutorFeridas/van_doutor_feridas.png"
+                  src="https://pub-db8ed4fb33634589a6ce5fb07e85cb46.r2.dev/landing_pages/doutorFeridas/doutora_home_care.png"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-secondary/40 to-transparent mix-blend-overlay"></div>
               </div>
