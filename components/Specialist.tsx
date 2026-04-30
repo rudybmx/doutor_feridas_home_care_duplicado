@@ -3,80 +3,46 @@ import { Reveal } from './Reveal';
 
 const Specialist: React.FC = () => {
   return (
-    <section id="especialista" className="py-12 md:py-20 bg-white dark:bg-slate-900">
-      <div className="container mx-auto px-4 max-w-5xl">
+    <section id="especialista" className="py-20 md:py-24 bg-slate-50 dark:bg-slate-950 overflow-hidden">
+      <div className="container mx-auto px-4 max-w-7xl relative">
+        
         <Reveal>
-          <div className="bg-[#062C52] rounded-[2rem] p-8 md:p-12 shadow-2xl relative overflow-hidden">
-            {/* Background pattern */}
-            <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl -mr-20 -mt-20"></div>
+          <div className="bg-white dark:bg-slate-900 rounded-[3rem] p-8 md:p-16 lg:p-20 shadow-[0_15px_45px_-10px_rgba(0,0,0,0.04)] border border-slate-100 dark:border-slate-800 relative">
             
-            <div className="relative z-10">
-              {/* Header */}
-              <div className="mb-10">
-                <h2 className="text-3xl md:text-4xl font-bold text-[#00B4D8] mb-2">Esp. Patrícia Wunden</h2>
-                <p className="text-white/80 text-sm md:text-base font-medium">
-                  Enfermeira, Doutora em Psicogerontologia, CEO Wunden Institut
-                </p>
-              </div>
+            {/* Quote Marks (as seen in screenshot) - more subtle */}
+            <div className="absolute top-10 left-10 text-slate-100 dark:text-slate-800 text-7xl font-serif select-none pointer-events-none opacity-50">"</div>
+            <div className="absolute bottom-4 right-10 text-slate-100 dark:text-slate-800 text-7xl font-serif select-none pointer-events-none opacity-50">"</div>
 
-              {/* Grid for Formação, Experiência, Publicações */}
-              <div className="space-y-10">
-                {/* Formação */}
-                <div>
-                  <h3 className="text-[#3CBFB4] font-bold text-xs uppercase tracking-[0.2em] mb-6">Formação</h3>
-                  <ul className="space-y-4">
-                    <li className="flex items-start gap-3 text-white/90 border-b border-white/10 pb-3 last:border-0">
-                      <span className="text-[#00B4D8] mt-1.5">•</span>
-                      <span className="text-sm md:text-base">Enfermeira e graduanda de Medicina (4º sem.)</span>
-                    </li>
-                    <li className="flex items-start gap-3 text-white/90 border-b border-white/10 pb-3 last:border-0">
-                      <span className="text-[#00B4D8] mt-1.5">•</span>
-                      <span className="text-sm md:text-base">Doutora e Mestra em Psicogerontologia e Ciências do Envelhecimento</span>
-                    </li>
-                    <li className="flex items-start gap-3 text-white/90 border-b border-white/10 pb-3 last:border-0">
-                      <span className="text-[#00B4D8] mt-1.5">•</span>
-                      <span className="text-sm md:text-base">Pós em UTI, Estética, Dermatologia, Ortomolecular, Ozonioterapia</span>
-                    </li>
-                  </ul>
-                </div>
+            {/* Content Container - slightly constrained for readability (approx 80 chars per line) */}
+            <div className="relative z-10 max-w-4xl mx-auto">
+              <p className="pw-bio text-base md:text-lg text-slate-600 dark:text-slate-400 leading-[1.8] md:leading-[2] text-justify font-normal tracking-tight">
+                <span className="block mb-6 text-indent-12">
+                  Enfermeira com doutorado em Psicogerontologia e Ciências do Envelhecimento, <strong className="text-secondary dark:text-white font-bold">Patrícia Wunden</strong> acumula mais de 8 anos como docente universitária e formação prática em UTI, Dermatologia e Medicina Ortomolecular. 
+                </span>
+                
+                <span className="block mb-6 text-indent-12">
+                  Fundadora do Wunden Institut, desenvolveu uma abordagem única que une ciência do envelhecimento, comportamento humano e cuidado integral, aplicada tanto em consultório quanto em programas de treinamento no Brasil e na Europa. 
+                </span>
 
-                {/* Experiência */}
-                <div>
-                  <h3 className="text-[#3CBFB4] font-bold text-xs uppercase tracking-[0.2em] mb-6">Experiência</h3>
-                  <ul className="space-y-4">
-                    <li className="flex items-start gap-3 text-white/90 border-b border-white/10 pb-3 last:border-0">
-                      <span className="text-[#00B4D8] mt-1.5">•</span>
-                      <span className="text-sm md:text-base">CEO do Wunden Institut, Consultório de Enfermagem</span>
-                    </li>
-                    <li className="flex items-start gap-3 text-white/90 border-b border-white/10 pb-3 last:border-0">
-                      <span className="text-[#00B4D8] mt-1.5">•</span>
-                      <span className="text-sm md:text-base">Docente universitária por 8 anos, Trainer no Brasil e na Europa</span>
-                    </li>
-                    <li className="flex items-start gap-3 text-white/90 border-b border-white/10 pb-3 last:border-0">
-                      <span className="text-[#00B4D8] mt-1.5">•</span>
-                      <span className="text-sm md:text-base">Enfermeira no Hospital Helios Herzzentrum, Leipzig, Alemanha</span>
-                    </li>
-                  </ul>
-                </div>
-
-                {/* Publicações */}
-                <div>
-                  <h3 className="text-[#3CBFB4] font-bold text-xs uppercase tracking-[0.2em] mb-6">Publicações e Certificações</h3>
-                  <ul className="space-y-4">
-                    <li className="flex items-start gap-3 text-white/90 border-b border-white/10 pb-3 last:border-0">
-                      <span className="text-[#00B4D8] mt-1.5">•</span>
-                      <span className="text-sm md:text-base">Master Coach, Analista de Perfil Comportamental</span>
-                    </li>
-                    <li className="flex items-start gap-3 text-white/90 border-b border-white/10 pb-3 last:border-0">
-                      <span className="text-[#00B4D8] mt-1.5">•</span>
-                      <span className="text-sm md:text-base">Coautora: "O Poder do Ser Humano" e "Metamorfose: novo tempo de envelhecimento"</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+                <span className="block text-indent-12">
+                  Autora e coautora de obras de referência como <span className="text-primary dark:text-blue-400 font-semibold italic">"O Poder do Ser Humano"</span> e <span className="text-primary dark:text-blue-400 font-semibold italic">"Metamorfose: novo tempo de envelhecimento"</span>, é também Master Coach e Analista de Perfil Comportamental certificada. Sua trajetória internacional, com atuação no Hospital Helios Herzzentrum em Leipzig, confere à sua prática uma visão clínica sofisticada, raramente encontrada no contexto brasileiro.
+                </span>
+              </p>
             </div>
           </div>
         </Reveal>
+        
+        {/* Custom CSS for indentation */}
+        <style dangerouslySetInnerHTML={{ __html: `
+          .text-indent-12 {
+            text-indent: 3rem;
+          }
+          @media (max-width: 768px) {
+            .text-indent-12 {
+              text-indent: 1.5rem;
+            }
+          }
+        `}} />
       </div>
     </section>
   );

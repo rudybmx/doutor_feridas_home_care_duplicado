@@ -54,13 +54,19 @@ const About: React.FC = () => {
             </Reveal>
             <Reveal delay={200}>
               <h2 className="text-3xl lg:text-5xl font-extrabold text-secondary dark:text-white mb-6 leading-tight">
-                  Não espera a ferida piorar para <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">buscar ajuda</span>
+                  Quem é a <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">especialista?</span>
               </h2>
             </Reveal>
             <Reveal delay={300}>
               <div className="space-y-4 text-slate-600 dark:text-slate-300 text-lg leading-relaxed mb-10">
                 <p>
-                    Feridas crônicas pioram com o tempo. O <strong className="text-secondary dark:text-white font-semibold">tratamento precoce especializado</strong> muda completamente o prognóstico. Atendemos na clínica em Mogi das Cruzes e também na sua casa, estamos a uma mensagem de distância.
+                    Enfermeira com doutorado em Psicogerontologia e Ciências do Envelhecimento, <strong className="text-secondary dark:text-white font-bold">Patrícia Wunden</strong> acumula mais de 8 anos como docente universitária e formação prática em UTI, Dermatologia e Medicina Ortomolecular.
+                </p>
+                <p>
+                    Fundadora do Wunden Institut, desenvolveu uma abordagem única que une ciência do envelhecimento, comportamento humano e cuidado integral, aplicada tanto em consultório quanto em programas de treinamento no Brasil e na Europa.
+                </p>
+                <p>
+                    Autora e coautora de obras de referência como <em className="text-primary italic">"O Poder do Ser Humano"</em> e <em className="text-primary italic">"Metamorfose: novo tempo de envelhecimento"</em>, traz uma visão clínica sofisticada com trajetória internacional.
                 </p>
               </div>
             </Reveal>
