@@ -49,7 +49,7 @@ const About: React.FC = () => {
           <div className="lg:col-span-6 lg:pl-10">
             <Reveal delay={100}>
               <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-primary/10 text-primary dark:text-primary font-bold text-xs uppercase tracking-wider mb-6 shadow-sm">
-                  A GENTE VAI ATÉ VOCÊ
+                  CUIDADO ESPECIALIZADO EM MOGI DAS CRUZES
               </div>
             </Reveal>
             <Reveal delay={200}>
@@ -60,10 +60,7 @@ const About: React.FC = () => {
             <Reveal delay={300}>
               <div className="space-y-4 text-slate-600 dark:text-slate-300 text-lg leading-relaxed mb-10">
                 <p>
-                    Feridas crônicas pioram com o tempo. O <strong className="text-secondary dark:text-white font-semibold">tratamento precoce domiciliar</strong> muda completamente o prognóstico, e é mais simples do que você imagina.
-                </p>
-                <p>
-                    Nossa equipe está a uma mensagem de distância.
+                    Feridas crônicas pioram com o tempo. O <strong className="text-secondary dark:text-white font-semibold">tratamento precoce especializado</strong> muda completamente o prognóstico. Atendemos na clínica em Mogi das Cruzes e também na sua casa, estamos a uma mensagem de distância.
                 </p>
               </div>
             </Reveal>
@@ -87,11 +84,11 @@ const About: React.FC = () => {
                     flex items-center justify-center gap-3
                     border-t border-white/20
                   " 
-                  href="https://wa.me/5511970925217?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o"
+                  href="https://wa.me/5511915523329?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                    <span className="relative z-10">Agendar visita agora</span>
+                    <span className="relative z-10">Agendar agora</span>
                     <span className="material-symbols-rounded relative z-10 group-hover:translate-x-1 transition-transform text-2xl">arrow_forward</span>
                     {/* Shine effect overlay */}
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>

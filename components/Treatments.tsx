@@ -9,7 +9,7 @@ const treatmentsData = [
   },
   {
     title: "Pé Diabético",
-    description: "Curativos avançados para o pé diabético.",
+    description: "Prevenção e tratamento avançado para o pé diabético.",
     icon: "glucose",
     image: "https://docs.qozt.com.br/landing_pages/doutorFeridas/Imagem05_feridas_diabeticos.jpeg"
   },
@@ -21,7 +21,7 @@ const treatmentsData = [
   },
   {
     title: "Feridas Pós-Cirúrgicas",
-    description: "Acompanhamento seguro para uma recuperação cirúrgica em casa.",
+    description: "Acompanhamento seguro para recuperação cirúrgica em casa ou na clínica.",
     icon: "medical_services",
     image: "https://docs.qozt.com.br/landing_pages/doutorFeridas/Imagem07_feridas_p%C3%B3s_cirurgia.jpg"
   },
@@ -151,12 +151,12 @@ const Treatments: React.FC = () => {
               ESPECIALIDADES CLÍNICAS
             </span>
             <h2 className="text-3xl md:text-5xl font-extrabold text-secondary dark:text-white leading-tight uppercase">
-              Feridas que tratamos <br className="hidden md:block"/> em casa
+              Tratamentos que realizamos <br className="hidden md:block"/>, na clínica e em casa
             </h2>
           </div>
           <div className="md:w-1/3">
             <p className="text-slate-600 dark:text-slate-400 text-sm md:text-base leading-relaxed font-medium">
-              Oferecemos tecnologia avançada e cuidados humanizados no conforto do seu lar, garantindo protocolos hospitalares com a segurança de uma equipe especializada.
+              Tecnologia avançada, cuidado humanizado e protocolos hospitalares, onde você precisar.
             </p>
           </div>
         </div>
@@ -213,7 +213,7 @@ const Treatments: React.FC = () => {
                   </div>
 
                   <a 
-                    href="https://wa.me/5511970925217?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o"
+                    href="https://wa.me/5511915523329?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-between mt-6 pt-4 border-t border-slate-100 dark:border-slate-700 cursor-pointer"
@@ -254,7 +254,7 @@ const Treatments: React.FC = () => {
             border-t border-white/20
             mx-auto
           "
-          href="https://wa.me/5511970925217?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o"
+          href="https://wa.me/5511915523329?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o"
           target="_blank"
           rel="noopener noreferrer"
         >

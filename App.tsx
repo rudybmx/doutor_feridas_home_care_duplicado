@@ -10,6 +10,7 @@ import Patients from './components/Patients';
 import About from './components/About';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
+import Specialist from './components/Specialist';
 
 function App() {
   const [isDark, setIsDark] = useState(false);
@@ -30,6 +31,7 @@ function App() {
       <Header isDark={isDark} toggleTheme={toggleTheme} />
       <main className="hero-gradient relative overflow-hidden pt-28">
         <Hero />
+        <Specialist />
         <HowItWorks />
         <AlertSigns />
         <Features />

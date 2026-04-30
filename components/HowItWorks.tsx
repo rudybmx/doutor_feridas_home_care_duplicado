@@ -6,7 +6,7 @@ const HowItWorks: React.FC = () => {
     <section className="min-h-screen py-12 lg:py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-white to-blue-50/30 dark:from-background-dark dark:to-background-dark flex flex-col justify-center items-center overflow-hidden">
       
       {/* Header */}
-      <header className="text-center mb-12 lg:mb-28 max-w-4xl mx-auto relative z-10">
+      <header className="text-center mb-16 lg:mb-36 max-w-4xl mx-auto relative z-10">
         <Reveal>
           <span className="inline-block py-1 px-4 rounded-full bg-primary/10 text-primary font-bold text-xs tracking-wider mb-6 shadow-sm uppercase">
             Passo a Passo
@@ -14,12 +14,12 @@ const HowItWorks: React.FC = () => {
         </Reveal>
         <Reveal delay={100}>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-secondary dark:text-white tracking-tight mb-4">
-            Como funciona o <strong className="font-extrabold">atendimento domiciliar?</strong>
+            Como funciona o <strong className="font-extrabold">atendimento especializado?</strong>
           </h2>
         </Reveal>
         <Reveal delay={200}>
           <p className="text-lg text-slate-600 dark:text-slate-400 font-medium max-w-2xl mx-auto">
-            Um processo simplificado para garantir que você ou seu familiar receba o melhor cuidado sem precisar sair de casa.
+            Um processo simplificado para garantir que você receba o melhor cuidado, na nossa clínica em Mogi das Cruzes ou no conforto da sua casa.
           </p>
         </Reveal>
       </header>
@@ -40,7 +40,7 @@ const HowItWorks: React.FC = () => {
                  <h3 className="text-xl font-bold text-secondary dark:text-white">Você entra em contato</h3>
               </div>
               <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
-                Preenche o formulário ou manda mensagem no WhatsApp. Retornamos em até 1 hora.
+                Preenche o formulário ou manda mensagem no WhatsApp. Retornamos em até 1 hora para agendar seu atendimento.
               </p>
            </Reveal>
 
@@ -51,10 +51,10 @@ const HowItWorks: React.FC = () => {
                  <div className="w-12 h-12 rounded-2xl bg-white dark:bg-slate-800 shadow-sm flex items-center justify-center text-primary">
                     <span className="material-symbols-rounded text-2xl text-accent">assignment</span>
                  </div>
-                 <h3 className="text-xl font-bold text-secondary dark:text-white">O especialista vai até a sua casa</h3>
+                 <h3 className="text-xl font-bold text-secondary dark:text-white">Escolha onde ser atendido</h3>
               </div>
               <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
-                Nosso enfermeiro chega com curativos avançados, laserterapia e todos os insumos.
+                Atendemos na nossa clínica em Mogi das Cruzes ou na sua casa, com toda a estrutura necessária, curativos avançados e laserterapia.
               </p>
            </Reveal>
 
@@ -65,10 +65,10 @@ const HowItWorks: React.FC = () => {
                  <div className="w-12 h-12 rounded-2xl bg-white dark:bg-slate-800 shadow-sm flex items-center justify-center text-primary">
                     <span className="material-symbols-rounded text-2xl text-accent">trending_up</span>
                  </div>
-                 <h3 className="text-xl font-bold text-secondary dark:text-white">Protocolo personalizado</h3>
+                 <h3 className="text-xl font-bold text-secondary dark:text-white">Tratamento até a cicatrização completa</h3>
               </div>
               <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
-                Avaliação minuciosa da ferida e acompanhamento especializado.
+                Avaliação, protocolo personalizado e acompanhamento contínuo até a alta, com a segurança de uma especialista com formação nacional e internacional.
               </p>
            </Reveal>
 
@@ -82,7 +82,7 @@ const HowItWorks: React.FC = () => {
                  <h3 className="text-xl font-bold text-secondary dark:text-white">Cicatrização completa</h3>
               </div>
               <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
-                Acompanhamento contínuo até a alta. Tudo no conforto da sua casa.
+                Acompanhamento contínuo até a alta. Na clínica ou no conforto da sua casa.
               </p>
            </Reveal>
         </div>
@@ -90,7 +90,7 @@ const HowItWorks: React.FC = () => {
 
       {/* DESKTOP TIMELINE (Elastic Wave) - Hidden on Mobile */}
       {/* Container fluido que mantém a proporção 2.5:1 para garantir que a curva SVG não distorça */}
-      <div className="hidden lg:block relative w-full max-w-6xl mx-auto aspect-[2.5/1] my-8">
+      <div className="hidden lg:block relative w-full max-w-6xl mx-auto aspect-[2.5/1] my-12 lg:my-24">
         
         {/* SVG Background Layer */}
         <svg 
@@ -141,10 +141,10 @@ const HowItWorks: React.FC = () => {
         <div className="absolute top-[20%] left-[12.5%] -translate-x-1/2 -translate-y-1/2 z-10">
           <Reveal delay={100} className="flex flex-col items-center group cursor-default">
             {/* Text ABOVE the node */}
-            <div className="absolute bottom-full mb-8 w-64 text-center">
+            <div className="absolute bottom-full mb-12 w-64 text-center">
               <h3 className="text-xl font-bold text-secondary dark:text-white mb-2 leading-tight">Você entra em contato</h3>
               <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed font-medium">
-                Preenche o formulário ou manda mensagem no WhatsApp. Retornamos em até 1 hora.
+                Preenche o formulário ou manda mensagem no WhatsApp. Retornamos em até 1 hora para agendar seu atendimento.
               </p>
             </div>
             
@@ -167,10 +167,10 @@ const HowItWorks: React.FC = () => {
             </div>
 
             {/* Text BELOW the node */}
-            <div className="absolute top-full mt-8 w-64 text-center">
-              <h3 className="text-xl font-bold text-secondary dark:text-white mb-2 leading-tight">O especialista vai até a sua casa</h3>
+            <div className="absolute top-full mt-12 w-64 text-center">
+              <h3 className="text-xl font-bold text-secondary dark:text-white mb-2 leading-tight">Escolha onde ser atendido</h3>
               <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed font-medium">
-                Nosso enfermeiro chega com curativos avançados, laserterapia e todos os insumos.
+                Atendemos na nossa clínica em Mogi das Cruzes ou na sua casa, com toda a estrutura necessária, curativos avançados e laserterapia.
               </p>
             </div>
           </Reveal>
@@ -180,10 +180,10 @@ const HowItWorks: React.FC = () => {
         <div className="absolute top-[20%] left-[62.5%] -translate-x-1/2 -translate-y-1/2 z-10">
           <Reveal delay={500} className="flex flex-col items-center group cursor-default">
             {/* Text ABOVE the node */}
-            <div className="absolute bottom-full mb-8 w-64 text-center">
-              <h3 className="text-xl font-bold text-secondary dark:text-white mb-2 leading-tight">Protocolo personalizado</h3>
+            <div className="absolute bottom-full mb-12 w-64 text-center">
+              <h3 className="text-xl font-bold text-secondary dark:text-white mb-2 leading-tight">Tratamento até a cicatrização completa</h3>
               <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed font-medium">
-                Avaliação minuciosa da ferida e acompanhamento especializado.
+                Avaliação, protocolo personalizado e acompanhamento contínuo até a alta, com a segurança de uma especialista com formação nacional e internacional.
               </p>
             </div>
 
@@ -205,10 +205,10 @@ const HowItWorks: React.FC = () => {
             </div>
 
             {/* Text BELOW the node */}
-            <div className="absolute top-full mt-8 w-64 text-center">
+            <div className="absolute top-full mt-12 w-64 text-center">
               <h3 className="text-xl font-bold text-secondary dark:text-white mb-2 leading-tight">Cicatrização completa</h3>
               <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed font-medium">
-                Acompanhamento contínuo até a alta. Tudo no conforto da sua casa.
+                Acompanhamento contínuo até a alta. Na clínica ou no conforto da sua casa.
               </p>
             </div>
           </Reveal>
@@ -220,10 +220,10 @@ const HowItWorks: React.FC = () => {
       <footer className="text-center mt-12 md:mt-16 relative z-10">
         <Reveal delay={800}>
           <p className="text-lg text-secondary dark:text-white font-medium mb-8">
-            Agendamento rápido e flexível, atendimento inclusive em fins de semana e feriados.
+            Agendamento rápido e flexível, Atendimento de segunda a sexta-feira.
           </p>
           <a 
-            href="https://wa.me/5511970925217?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o"
+            href="https://wa.me/5511915523329?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o"
             target="_blank"
             rel="noopener noreferrer"
             className="

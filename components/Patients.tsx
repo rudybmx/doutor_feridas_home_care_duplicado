@@ -16,7 +16,7 @@ const Patients: React.FC = () => {
             <div className="max-w-3xl">
               <Reveal>
                 <h2 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
-                  O Doutor Feridas Home Care é para você
+                  O atendimento Doutor Feridas Mogi das Cruzes é para você
                 </h2>
               </Reveal>
             </div>
@@ -33,7 +33,7 @@ const Patients: React.FC = () => {
                    <h3 className="text-2xl font-bold text-white group-hover:text-secondary transition-colors">Ferida que não cicatriza</h3>
                 </div>
                 <p className="text-blue-100/80 group-hover:text-slate-600 leading-relaxed flex-grow transition-colors">
-                  Ferida aberta há mais de 2 semanas sem melhora, mesmo com curativo convencional.
+                  Ferida aberta há mais de 2 semanas sem melhora, mesmo com tratamento convencional.
                 </p>
               </div>
             </div>
@@ -59,7 +59,7 @@ const Patients: React.FC = () => {
                    <h3 className="text-2xl font-bold text-white group-hover:text-secondary transition-colors">Mobilidade reduzida</h3>
                 </div>
                 <p className="text-blue-100/80 group-hover:text-slate-600 leading-relaxed flex-grow transition-colors">
-                  Dificuldade de locomoção que torna deslocamentos ao hospital um desafio.
+                  Dificuldade de locomoção que torna deslocamentos ao hospital um desafio, atendemos em casa.
                 </p>
               </div>
             </div>
@@ -85,7 +85,7 @@ const Patients: React.FC = () => {
                     <h3 className="text-2xl font-bold text-white group-hover:text-secondary transition-colors">Evitar hospitalizações</h3>
                 </div>
                 <p className="text-blue-100/80 group-hover:text-slate-600 leading-relaxed flex-grow transition-colors">
-                  Quer evitar idas frequentes ao hospital ou clínica para curativos periódicos.
+                  Quer evitar idas frequentes ao hospital, tratamos na clínica ou na sua casa.
                 </p>
               </div>
             </div>
@@ -111,7 +111,7 @@ const Patients: React.FC = () => {
           <div className="mt-12 lg:mt-24 text-center">
             <div className="inline-flex flex-col items-center max-w-2xl mx-auto">
               <p className="text-xl md:text-2xl font-semibold text-white mb-8 leading-relaxed">
-                Se você se identificou, seu próximo passo é simples: entre em contato e a nossa equipe cuida do resto. <br/><strong className="font-bold">A primeira avaliação é gratuita.</strong>
+                Se você se identificou, o próximo passo é simples: entre em contato e escolha como quer ser atendido, na clínica ou em casa. <br/><strong className="font-bold">A primeira avaliação é gratuita.</strong>
               </p>
               <a 
                 className="
@@ -130,7 +130,7 @@ const Patients: React.FC = () => {
                   flex items-center justify-center gap-3
                   border border-white/20
                 " 
-                href="https://wa.me/5511970925217?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o"
+                href="https://wa.me/5511915523329?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o"
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conteúdo Novo — LP Doutor Feridas SBC Centro</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #0D2B5E;
+  --blue: #1A5FA5;
+  --cyan: #00B4D8;
+  --teal: #3CBFB4;
+  --white: #FFFFFF;
+  --light: #F0F6FF;
+  --border: #D6E4F7;
+  --muted: #5A7BA8;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #F4F8FF;
+  color: var(--navy);
+  padding: 32px 16px 60px;
+}
+.page { max-width: 900px; margin: 0 auto; }
+
+.page-header {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 100%);
+  border-radius: 16px;
+  padding: 32px 36px;
+  margin-bottom: 28px;
+  position: relative; overflow: hidden;
+}
+.page-header::before {
+  content: '';
+  position: absolute; top: -60px; right: -60px;
+  width: 220px; height: 220px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(0,180,216,.2) 0%, transparent 70%);
+}
+.page-tag {
+  font-size: 10px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .12em;
+  color: var(--cyan); margin-bottom: 10px;
+}
+.page-title {
+  font-size: 24px; font-weight: 800;
+  color: var(--white); line-height: 1.25; margin-bottom: 8px;
+}
+.page-sub { font-size: 13px; color: rgba(255,255,255,.7); line-height: 1.65; max-width: 580px; }
+
+.intro-nota {
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-left: 4px solid var(--cyan);
+  border-radius: 10px;
+  padding: 14px 18px;
+  margin-bottom: 24px;
+  font-size: 13px; line-height: 1.7; color: var(--muted);
+}
+.intro-nota strong { color: var(--navy); }
+
+/* ── SEÇÃO ── */
+.secao {
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: 16px;
+  margin-bottom: 18px;
+  overflow: hidden;
+}
+.secao-header {
+  background: var(--navy);
+  padding: 14px 20px;
+  display: flex; align-items: center; gap: 12px;
+}
+.secao-num {
+  width: 32px; height: 32px; border-radius: 50%;
+  background: var(--cyan); color: var(--navy);
+  font-size: 13px; font-weight: 800;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.secao-nome { font-size: 14px; font-weight: 700; color: var(--white); flex: 1; }
+.secao-badge {
+  font-size: 10px; padding: 3px 10px;
+  border-radius: 99px; font-weight: 600;
+  background: rgba(0,180,216,.25); color: var(--cyan);
+  white-space: nowrap;
+}
+.secao-alerta {
+  background: rgba(60,191,180,.15); color: #0D6E66;
+  border-top: 1px solid rgba(60,191,180,.3);
+  padding: 10px 18px;
+  font-size: 12px; line-height: 1.6;
+}
+.secao-alerta strong { color: #085041; }
+
+/* ── CAMPO ── */
+.campo {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  border-bottom: 1px solid var(--border);
+}
+.campo:last-child { border-bottom: none; }
+.campo-lbl {
+  padding: 14px 16px;
+  background: var(--light);
+  border-right: 1px solid var(--border);
+  font-size: 10px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .06em;
+  color: var(--muted);
+  display: flex; align-items: flex-start;
+  line-height: 1.4;
+}
+.campo-val {
+  padding: 14px 18px;
+  font-size: 13px; line-height: 1.8;
+  color: var(--navy);
+}
+.campo-val strong { color: var(--blue); font-weight: 700; }
+.campo-val em { color: var(--teal); font-style: normal; font-weight: 600; }
+.campo-val code {
+  display: block;
+  background: var(--light);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12.5px; line-height: 1.75;
+  color: var(--navy);
+  margin-top: 8px;
+  white-space: pre-wrap;
+}
+.tag-novo {
+  display: inline-block;
+  background: #E1F5EE; color: #085041;
+  border: 1px solid #9FE1CB;
+  font-size: 10px; font-weight: 700;
+  padding: 1px 8px; border-radius: 99px;
+  margin-left: 6px; vertical-align: middle;
+}
+.tag-muda {
+  display: inline-block;
+  background: #FAEEDA; color: #633806;
+  border: 1px solid #F5C97A;
+  font-size: 10px; font-weight: 700;
+  padding: 1px 8px; border-radius: 99px;
+  margin-left: 6px; vertical-align: middle;
+}
+.tag-remove {
+  display: inline-block;
+  background: #FCEBEB; color: #791F1F;
+  border: 1px solid #F09595;
+  font-size: 10px; font-weight: 700;
+  padding: 1px 8px; border-radius: 99px;
+  margin-left: 6px; vertical-align: middle;
+}
+
+.nota-campo {
+  padding: 10px 16px;
+  background: #FAEEDA;
+  border-top: 1px solid #F5C97A;
+  font-size: 12px; color: #633806; line-height: 1.6;
+  grid-column: 1 / -1;
+}
+.nota-campo strong { color: #412402; }
+
+/* release card */
+.release-card {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 100%);
+  border-radius: 12px;
+  padding: 18px 20px;
+  margin-top: 10px;
+  color: var(--white);
+}
+.release-nome {
+  font-size: 15px; font-weight: 800;
+  color: var(--cyan); margin-bottom: 3px;
+}
+.release-sub {
+  font-size: 11px; color: rgba(255,255,255,.65);
+  margin-bottom: 14px; font-weight: 500;
+}
+.release-bloco { margin-bottom: 12px; }
+.release-bloco-titulo {
+  font-size: 10px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .08em;
+  color: var(--teal); margin-bottom: 6px;
+}
+.release-item {
+  font-size: 12px; color: rgba(255,255,255,.85);
+  padding: 3px 0; border-bottom: 1px solid rgba(255,255,255,.08);
+  display: flex; gap: 7px; align-items: flex-start; line-height: 1.5;
+}
+.release-item:last-child { border-bottom: none; }
+.release-item::before { content: "·"; color: var(--cyan); flex-shrink: 0; font-weight: 700; }
+
+.footer-doc {
+  text-align: center; margin-top: 36px;
+  font-size: 12px; color: var(--muted);
+  padding-top: 18px; border-top: 1px solid var(--border);
+}
+.footer-doc strong { color: var(--navy); }
+
+@media (max-width: 600px) {
+  .campo { grid-template-columns: 1fr; }
+  .campo-lbl { border-right: none; border-bottom: 1px solid var(--border); }
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="page-header">
+    <div class="page-tag">Doutor Feridas · SBC Centro · Conteúdo novo da LP</div>
+    <div class="page-title">Direcionamento de conteúdo por seção</div>
+    <div class="page-sub">Substituição de textos sem alterar layout, design ou estrutura. Mescla: Home Care + Clínica Física + Release profissional da especialista responsável.</div>
+  </div>
+
+  <div class="intro-nota">
+    <strong>Como usar este documento:</strong> Cada seção abaixo corresponde a um bloco da LP. Substitua apenas os textos indicados — ícones, imagens, botões e estrutura HTML permanecem intactos. Campos marcados com <span class="tag-novo">NOVO</span> são conteúdos adicionados. <span class="tag-muda">ALTERAR</span> indica substituição. <span class="tag-remove">REMOVER</span> indica exclusão de texto.
+  </div>
+
+  <!-- ═══════════════════════════════
+       SEÇÃO 1 — HERO / TOPO
+  ═══════════════════════════════ -->
+  <div class="secao">
+    <div class="secao-header">
+      <div class="secao-num">1</div>
+      <div class="secao-nome">Hero — Topo da página</div>
+      <span class="secao-badge">Headline + subtítulo + balão flutuante + formulário</span>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Título principal<span class="tag-muda">ALTERAR</span></div>
+      <div class="campo-val">
+        Tratamento especializado de <strong>feridas crônicas</strong> — na sua casa ou na nossa clínica.
+        <div class="nota-campo"><strong>Obs:</strong> A mudança de "curativo domiciliar" para "tratamento" deve ser aplicada em todo o site. Aqui no hero já incluímos "na nossa clínica" para sinalizar que não é apenas home care.</div>
+      </div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Subtítulo<span class="tag-muda">ALTERAR</span></div>
+      <div class="campo-val">
+        Sem fila. Sem deslocamento desnecessário. Nossa especialista vai até você — ou te recebe com toda a estrutura em SBC. Tecnologia laser, curativos avançados e protocolo validado.
+      </div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Badges (3 pills)<span class="tag-muda">ALTERAR</span></div>
+      <div class="campo-val">
+        <em>Badge 1:</em> Atendimento domiciliar<br>
+        <em>Badge 2:</em> Laserterapia<br>
+        <em>Badge 3:</em> Avaliação gratuita
+      </div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Balão flutuante — release profissional<span class="tag-novo">NOVO</span></div>
+      <div class="campo-val">
+        Substituir o conteúdo atual do balão flutuante ao lado da foto pelo release reduzido abaixo — versão objetiva e de impacto:
+        <div class="release-card">
+          <div class="release-nome">Esp. Patrícia Wunden</div>
+          <div class="release-sub">Enfermeira · Doutora em Psicogerontologia · CEO Wunden Institut</div>
+
+          <div class="release-bloco">
+            <div class="release-bloco-titulo">Formação</div>
+            <div class="release-item">Enfermeira e graduanda de Medicina (4º sem.)</div>
+            <div class="release-item">Doutora e Mestra em Psicogerontologia e Ciências do Envelhecimento</div>
+            <div class="release-item">Pós em UTI · Estética · Dermatologia · Ortomolecular · Ozonioterapia</div>
+          </div>
+
+          <div class="release-bloco">
+            <div class="release-bloco-titulo">Experiência</div>
+            <div class="release-item">CEO do Wunden Institut — Consultório de Enfermagem</div>
+            <div class="release-item">Docente universitária por 8 anos · Trainer no Brasil e na Europa</div>
+            <div class="release-item">Enfermeira no Hospital Helios Herzzentrum · Leipzig, Alemanha</div>
+          </div>
+
+          <div class="release-bloco">
+            <div class="release-bloco-titulo">Publicações e certificações</div>
+            <div class="release-item">Master Coach · Analista de Perfil Comportamental</div>
+            <div class="release-item">Coautora: "O Poder do Ser Humano" e "Metamorfose: novo tempo de envelhecimento"</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Formulário — título</div>
+      <div class="campo-val">Agende sua avaliação</div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Formulário — subtítulo</div>
+      <div class="campo-val">Preencha os dados e entraremos em contato rapidamente.</div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Botão CTA</div>
+      <div class="campo-val"><strong>Solicitar Atendimento</strong></div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Texto abaixo do botão<span class="tag-muda">ALTERAR</span></div>
+      <div class="campo-val">Atendimento domiciliar e presencial · segunda a sexta.</div>
+    </div>
+
+    <div class="secao-alerta"><strong>Atenção:</strong> Remover qualquer menção a atendimento em fins de semana e feriados nesta seção e em todo o site — a especialista não atende nesses dias.</div>
+  </div>
+
+  <!-- ═══════════════════════════════
+       SEÇÃO 2 — COMO FUNCIONA
+  ═══════════════════════════════ -->
+  <div class="secao">
+    <div class="secao-header">
+      <div class="secao-num">2</div>
+      <div class="secao-nome">Como funciona o atendimento</div>
+      <span class="secao-badge">3 passos + CTA</span>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Título<span class="tag-muda">ALTERAR</span></div>
+      <div class="campo-val">Como funciona o <strong>atendimento especializado?</strong></div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Subtítulo<span class="tag-muda">ALTERAR</span></div>
+      <div class="campo-val">Um processo simplificado para garantir que você receba o melhor cuidado — na nossa clínica em SBC ou no conforto da sua casa.</div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Passo 01</div>
+      <div class="campo-val">
+        <strong>Título:</strong> Você entra em contato<br><br>
+        <strong>Descrição:</strong> Preenche o formulário ou manda mensagem no WhatsApp. Retornamos em até 1 hora para agendar seu atendimento.
+      </div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Passo 02<span class="tag-muda">ALTERAR</span></div>
+      <div class="campo-val">
+        <strong>Título:</strong> Escolha onde ser atendido<br><br>
+        <strong>Descrição:</strong> Atendemos na nossa clínica em SBC ou na sua casa — com toda a estrutura necessária, curativos avançados e laserterapia.
+      </div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Passo 03</div>
+      <div class="campo-val">
+        <strong>Título:</strong> Tratamento até a cicatrização completa<br><br>
+        <strong>Descrição:</strong> Avaliação, protocolo personalizado e acompanhamento contínuo até a alta — com a segurança de uma especialista com formação nacional e internacional.
+      </div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Banner inferior<span class="tag-muda">ALTERAR</span></div>
+      <div class="campo-val">
+        <strong>Ícone + texto:</strong> Agendamento rápido e flexível — Atendimento de segunda a sexta-feira.
+        <div class="nota-campo"><strong>Remover:</strong> qualquer menção a "fins de semana" e "feriados".</div>
+      </div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Botão CTA</div>
+      <div class="campo-val"><strong>AGENDAR MINHA AVALIAÇÃO AGORA</strong></div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════
+       SEÇÃO 3 — VOCÊ SE IDENTIFICA
+  ═══════════════════════════════ -->
+  <div class="secao">
+    <div class="secao-header">
+      <div class="secao-num">3</div>
+      <div class="secao-nome">Você se identifica?</div>
+      <span class="secao-badge">4 cards de dor + fechamento</span>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Label superior</div>
+      <div class="campo-val">VOCÊ SE IDENTIFICA?</div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Título</div>
+      <div class="campo-val">A ferida não cicatriza mesmo com curativo caseiro?</div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Subtítulo<span class="tag-muda">ALTERAR</span></div>
+      <div class="campo-val">Milhares de brasileiros convivem com <strong>feridas crônicas</strong> sem saber que existe um <strong>tratamento especializado</strong> — na clínica ou na sua casa.</div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Card 1</div>
+      <div class="campo-val">
+        <strong>Título:</strong> A ferida está aberta há semanas ou meses sem melhora...<br>
+        <strong>Descrição:</strong> ...mesmo com pomada e curativo de farmácia.
+      </div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Card 2</div>
+      <div class="campo-val">
+        <strong>Título:</strong> Tem diabetes e percebeu uma ferida no pé ou perna...<br>
+        <strong>Descrição:</strong> ...que não demonstra sinais de cicatrização.
+      </div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Card 3</div>
+      <div class="campo-val">
+        <strong>Título:</strong> Seu familiar está acamado e com escara de pressão...<br>
+        <strong>Descrição:</strong> ...e sair de casa para consultas é um desafio.
+      </div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Card 4</div>
+      <div class="campo-val">
+        <strong>Título:</strong> Já buscou UPAs e postos de saúde diversas vezes...<br>
+        <strong>Descrição:</strong> ...e ninguém resolveu definitivamente o problema.
+      </div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Fechamento<span class="tag-muda">ALTERAR</span></div>
+      <div class="campo-val">Se você se identificou, a solução está aqui. Atendemos na nossa <strong>clínica em São Bernardo do Campo</strong> e realizamos <strong>tratamento domiciliar</strong> com toda a estrutura necessária para cicatrizar o que parecia impossível.</div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════
+       SEÇÃO 4 — DIFERENCIAIS
+  ═══════════════════════════════ -->
+  <div class="secao">
+    <div class="secao-header">
+      <div class="secao-num">4</div>
+      <div class="secao-nome">Por que somos diferentes — 6 diferenciais</div>
+      <span class="secao-badge">Label + título + 6 cards</span>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Label superior</div>
+      <div class="campo-val">POR QUE SOMOS DIFERENTES</div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Título<span class="tag-muda">ALTERAR</span></div>
+      <div class="campo-val">Por que a Doutor Feridas SBC Centro é referência em cicatrização</div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Diferencial 1<span class="tag-muda">ALTERAR</span></div>
+      <div class="campo-val">
+        <strong>Título:</strong> Especialista com formação internacional<br>
+        <strong>Descrição:</strong> Doutora em Psicogerontologia com atuação no Hospital Helios em Leipzig, Alemanha.
+      </div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Diferencial 2</div>
+      <div class="campo-val">
+        <strong>Título:</strong> Laserterapia em domicílio e na clínica<br>
+        <strong>Descrição:</strong> Acesso à laserterapia para feridas crônicas onde você preferir ser atendido.
+      </div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Diferencial 3<span class="tag-muda">ALTERAR</span></div>
+      <div class="campo-val">
+        <strong>Título:</strong> Especialista estomaterapeuta e gerontologista<br>
+        <strong>Descrição:</strong> Cuidado especializado em feridas com visão integral do paciente — especialmente idosos.
+      </div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Diferencial 4</div>
+      <div class="campo-val">
+        <strong>Título:</strong> Mala completa inclusa<br>
+        <strong>Descrição:</strong> Todos os curativos avançados e insumos especializados chegam com a profissional.
+      </div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Diferencial 5</div>
+      <div class="campo-val">
+        <strong>Título:</strong> Acompanhamento até a alta<br>
+        <strong>Descrição:</strong> Não é visita avulsa. É acompanhamento do diagnóstico até a cicatrização completa.
+      </div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Diferencial 6<span class="tag-muda">ALTERAR</span></div>
+      <div class="campo-val">
+        <strong>Título:</strong> Clínica física e atendimento domiciliar<br>
+        <strong>Descrição:</strong> Você escolhe onde ser atendido — nossa clínica em SBC ou no conforto da sua casa.
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════
+       SEÇÃO 5 — TRATAMENTOS
+  ═══════════════════════════════ -->
+  <div class="secao">
+    <div class="secao-header">
+      <div class="secao-num">5</div>
+      <div class="secao-nome">Especialidades clínicas</div>
+      <span class="secao-badge">Label + título + cards</span>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Label superior</div>
+      <div class="campo-val">ESPECIALIDADES CLÍNICAS</div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Título<span class="tag-muda">ALTERAR</span></div>
+      <div class="campo-val">Tratamentos que realizamos — na clínica e em casa</div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Subtítulo<span class="tag-muda">ALTERAR</span></div>
+      <div class="campo-val">Tecnologia avançada, cuidado humanizado e protocolos hospitalares — onde você precisar.</div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Card 1</div>
+      <div class="campo-val">
+        <strong>Título:</strong> Pé Diabético<br>
+        <strong>Descrição:</strong> Prevenção e tratamento avançado para o pé diabético.
+      </div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Card 2</div>
+      <div class="campo-val">
+        <strong>Título:</strong> Feridas por Má Circulação<br>
+        <strong>Descrição:</strong> Úlceras venosas e arteriais tratadas com as melhores tecnologias.
+      </div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Card 3</div>
+      <div class="campo-val">
+        <strong>Título:</strong> Feridas Pós-Cirúrgicas<br>
+        <strong>Descrição:</strong> Acompanhamento seguro para recuperação cirúrgica em casa ou na clínica.
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════
+       SEÇÃO 6 — NÚMEROS
+  ═══════════════════════════════ -->
+  <div class="secao">
+    <div class="secao-header">
+      <div class="secao-num">6</div>
+      <div class="secao-nome">Nossos números</div>
+      <span class="secao-badge">3 stats + CTA</span>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Label superior</div>
+      <div class="campo-val">NOSSOS NÚMEROS</div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Título</div>
+      <div class="campo-val">A referência em cicatrização no Brasil.</div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Stat 1</div>
+      <div class="campo-val">
+        <strong>Número:</strong> +20 ANOS<br>
+        <strong>Label:</strong> DE EXPERIÊNCIA
+      </div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Stat 2</div>
+      <div class="campo-val">
+        <strong>Número:</strong> +8M CASOS<br>
+        <strong>Label:</strong> TRATADOS NO BRASIL
+      </div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Stat 3<span class="tag-muda">ALTERAR</span></div>
+      <div class="campo-val">
+        <strong>Número:</strong> 2 EM 1<br>
+        <strong>Label:</strong> CLÍNICA + DOMICILIAR
+      </div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Botão CTA</div>
+      <div class="campo-val"><strong>AGENDAR AVALIAÇÃO GRATUITA</strong></div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════
+       SEÇÃO 7 — PARA QUEM É
+  ═══════════════════════════════ -->
+  <div class="secao">
+    <div class="secao-header">
+      <div class="secao-num">7</div>
+      <div class="secao-nome">Para quem é o atendimento</div>
+      <span class="secao-badge">Título + 6 cards + banner + CTA</span>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Título<span class="tag-muda">ALTERAR</span></div>
+      <div class="campo-val">O atendimento Doutor Feridas SBC é para você</div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Card 1</div>
+      <div class="campo-val">
+        <strong>Título:</strong> Ferida que não cicatriza<br>
+        <strong>Descrição:</strong> Ferida aberta há mais de 2 semanas sem melhora, mesmo com tratamento convencional.
+      </div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Card 2</div>
+      <div class="campo-val">
+        <strong>Título:</strong> Pé diabético<br>
+        <strong>Descrição:</strong> Diabetes e uma ferida nos pés ou pernas que não demonstra sinais de cicatrização.
+      </div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Card 3</div>
+      <div class="campo-val">
+        <strong>Título:</strong> Mobilidade reduzida<br>
+        <strong>Descrição:</strong> Dificuldade de locomoção que torna deslocamentos ao hospital um desafio — atendemos em casa.
+      </div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Card 4</div>
+      <div class="campo-val">
+        <strong>Título:</strong> Cuidador familiar<br>
+        <strong>Descrição:</strong> Cuida de idoso ou familiar acamado com ferida e precisa de suporte especializado.
+      </div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Card 5</div>
+      <div class="campo-val">
+        <strong>Título:</strong> Evitar hospitalizações<br>
+        <strong>Descrição:</strong> Quer evitar idas frequentes ao hospital — tratamos na clínica ou na sua casa.
+      </div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Card 6</div>
+      <div class="campo-val">
+        <strong>Título:</strong> Sem resultado anterior<br>
+        <strong>Descrição:</strong> Já fez tratamento em outros lugares e não obteve resultado satisfatório.
+      </div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Banner de fechamento<span class="tag-muda">ALTERAR</span></div>
+      <div class="campo-val">Se você se identificou, o próximo passo é simples: entre em contato e escolha como quer ser atendido — na clínica ou em casa. <strong>A primeira avaliação é gratuita.</strong></div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Botão CTA</div>
+      <div class="campo-val"><strong>Agendar avaliação</strong></div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════
+       SEÇÃO 8 — URGÊNCIA
+  ═══════════════════════════════ -->
+  <div class="secao">
+    <div class="secao-header">
+      <div class="secao-num">8</div>
+      <div class="secao-nome">Banner de urgência — fundo escuro</div>
+      <span class="secao-badge">Label + título + texto + CTA</span>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Label superior<span class="tag-muda">ALTERAR</span></div>
+      <div class="campo-val">CUIDADO ESPECIALIZADO EM SBC</div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Título<span class="tag-muda">ALTERAR</span></div>
+      <div class="campo-val">Não espera a ferida piorar para buscar ajuda</div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Texto<span class="tag-muda">ALTERAR</span></div>
+      <div class="campo-val">Feridas crônicas pioram com o tempo. O <strong>tratamento precoce especializado</strong> muda completamente o prognóstico. Atendemos na clínica em SBC e também na sua casa — estamos a uma mensagem de distância.</div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Botão CTA</div>
+      <div class="campo-val"><strong>Agendar agora</strong></div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════
+       SEÇÃO 9 — FAQ
+  ═══════════════════════════════ -->
+  <div class="secao">
+    <div class="secao-header">
+      <div class="secao-num">9</div>
+      <div class="secao-nome">FAQ — Dúvidas frequentes</div>
+      <span class="secao-badge">Título + subtítulo + perguntas</span>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Título<span class="tag-muda">ALTERAR</span></div>
+      <div class="campo-val">Dúvidas sobre nosso atendimento em SBC</div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Subtítulo<span class="tag-muda">ALTERAR</span></div>
+      <div class="campo-val">As perguntas mais frequentes de quem está considerando o tratamento especializado de feridas.</div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Pergunta 1<span class="tag-muda">ALTERAR</span></div>
+      <div class="campo-val">
+        <strong>Pergunta:</strong> Como funciona o tratamento de feridas da Doutor Feridas SBC?<br><br>
+        <strong>Resposta sugerida:</strong> Realizamos avaliação completa da ferida, identificamos a causa raiz e aplicamos o protocolo mais adequado — com laserterapia, curativos avançados e acompanhamento contínuo. Atendemos na nossa clínica em São Bernardo do Campo ou na sua casa.
+      </div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Pergunta 2</div>
+      <div class="campo-val">
+        <strong>Pergunta:</strong> Quanto custa o atendimento?<br><br>
+        <strong>Resposta sugerida:</strong> O valor varia conforme o tipo de tratamento e frequência. A primeira avaliação é gratuita — entre em contato para saber mais.
+      </div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Pergunta 3<span class="tag-muda">ALTERAR</span></div>
+      <div class="campo-val">
+        <strong>Pergunta:</strong> Vocês atendem em domicílio e na clínica?<br><br>
+        <strong>Resposta sugerida:</strong> Sim. Você pode ser atendido na nossa clínica em São Bernardo do Campo ou solicitar o atendimento domiciliar. O atendimento é de segunda a sexta-feira.
+      </div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Pergunta 4</div>
+      <div class="campo-val">
+        <strong>Pergunta:</strong> O plano de saúde cobre o tratamento?<br><br>
+        <strong>Resposta sugerida:</strong> Atualmente trabalhamos com pagamento particular. Entre em contato para conhecer as condições e formas de pagamento disponíveis.
+      </div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Pergunta 5<span class="tag-muda">ALTERAR</span></div>
+      <div class="campo-val">
+        <strong>Pergunta:</strong> Em quanto tempo consigo agendar o primeiro atendimento?<br><br>
+        <strong>Resposta sugerida:</strong> Retornamos em até 1 hora após o contato para agendar a avaliação — de segunda a sexta-feira.
+      </div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Pergunta 6</div>
+      <div class="campo-val">
+        <strong>Pergunta:</strong> O tratamento funciona para feridas complexas como pé diabético e escara?<br><br>
+        <strong>Resposta sugerida:</strong> Sim. Somos especializados justamente nos casos mais complexos — pé diabético, escaras, úlceras venosas e feridas pós-cirúrgicas que não evoluíram com tratamento convencional.
+      </div>
+    </div>
+
+    <div class="secao-alerta"><strong>Importante:</strong> Remover qualquer pergunta ou resposta que mencione atendimento em fins de semana e feriados.</div>
+  </div>
+
+  <!-- ═══════════════════════════════
+       SEÇÃO 10 — RODAPÉ
+  ═══════════════════════════════ -->
+  <div class="secao">
+    <div class="secao-header">
+      <div class="secao-num">10</div>
+      <div class="secao-nome">Rodapé — Footer</div>
+      <span class="secao-badge">Logo + descrição + menu + copyright</span>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Nome / marca</div>
+      <div class="campo-val">Doutor Feridas</div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Descrição<span class="tag-muda">ALTERAR</span></div>
+      <div class="campo-val">Referência em cicatrização no Brasil. Atendimento especializado na clínica e no domicílio — tecnologia laser e protocolos de alta performance.</div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Menu do rodapé<span class="tag-muda">ALTERAR</span></div>
+      <div class="campo-val">Início · Tratamentos · Como Funciona · Diferenciais · Dúvidas (FAQ) · Contato</div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Horário<span class="tag-novo">NOVO</span></div>
+      <div class="campo-val">
+        <strong>Horário de atendimento:</strong><br>
+        Segunda a sexta-feira<br>
+        Não atendemos em fins de semana e feriados.
+      </div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-lbl">Copyright</div>
+      <div class="campo-val">©2026 Doutor Feridas. Todos os direitos reservados.</div>
+    </div>
+  </div>
+
+  <div class="footer-doc">
+    <strong>Doutor Feridas · SBC Centro</strong> · Direcionamento de conteúdo para LP · Apenas textos — estrutura, layout e design permanecem intactos.
+  </div>
+
+</div>
+</body>
+</html>

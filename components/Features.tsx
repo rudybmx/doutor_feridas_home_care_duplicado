@@ -8,7 +8,7 @@ const Features: React.FC = () => {
           POR QUE SOMOS DIFERENTES
         </span>
         <h2 className="text-3xl md:text-5xl font-extrabold text-secondary dark:text-white">
-          Por que o Doutor Feridas Home Care é referência no Brasil
+          Por que a Doutor Feridas Mogi das Cruzes é referência em cicatrização
         </h2>
       </div>
 
@@ -21,9 +21,9 @@ const Features: React.FC = () => {
             <div className="w-16 h-16 bg-blue-50 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center mb-6 overflow-hidden">
               <span className="material-symbols-rounded text-primary text-4xl">star</span>
             </div>
-            <h3 className="text-xl font-bold mb-3 text-secondary dark:text-white">Método Doutor Feridas</h3>
+            <h3 className="text-xl font-bold mb-3 text-secondary dark:text-white">Especialista com formação internacional</h3>
             <p className="text-sm text-slate-600 dark:text-slate-400 font-medium leading-relaxed mb-6 flex-grow">
-              Mais de 20 anos exclusivamente dedicados ao tratamento de feridas crônicas.
+              Doutora em Psicogerontologia com atuação no Hospital Helios em Leipzig, Alemanha.
             </p>
           </div>
         </div>
@@ -35,9 +35,9 @@ const Features: React.FC = () => {
             <div className="w-16 h-16 bg-blue-50 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center mb-6 overflow-hidden">
               <span className="material-symbols-rounded text-primary text-4xl">flare</span>
             </div>
-            <h3 className="text-xl font-bold mb-3 text-secondary dark:text-white">Laserterapia em domicílio</h3>
+            <h3 className="text-xl font-bold mb-3 text-secondary dark:text-white">Laserterapia em domicílio e na clínica</h3>
             <p className="text-sm text-slate-600 dark:text-slate-400 font-medium leading-relaxed mb-6 flex-grow">
-              Acesso à laserterapia para feridas crônicas diretamente na sua casa.
+              Acesso à laserterapia para feridas crônicas onde você preferir ser atendido.
             </p>
           </div>
         </div>
@@ -49,9 +49,9 @@ const Features: React.FC = () => {
             <div className="w-16 h-16 bg-blue-50 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center mb-6 overflow-hidden">
               <span className="material-symbols-rounded text-primary text-4xl">medical_services</span>
             </div>
-            <h3 className="text-xl font-bold mb-3 text-secondary dark:text-white">Enfermeiro estomaterapeuta</h3>
+            <h3 className="text-xl font-bold mb-3 text-secondary dark:text-white">Especialista estomaterapeuta e gerontologista</h3>
             <p className="text-sm text-slate-600 dark:text-slate-400 font-medium leading-relaxed mb-6 flex-grow">
-              Enfermeiro especialista em feridas com suporte médico contínuo.
+              Cuidado especializado em feridas com visão integral do paciente, especialmente idosos.
             </p>
           </div>
         </div>
@@ -91,9 +91,9 @@ const Features: React.FC = () => {
             <div className="w-16 h-16 bg-blue-50 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center mb-6 overflow-hidden">
               <span className="material-symbols-rounded text-primary text-4xl">favorite</span>
             </div>
-            <h3 className="text-xl font-bold mb-3 text-secondary dark:text-white">Cuidado humanizado</h3>
+            <h3 className="text-xl font-bold mb-3 text-secondary dark:text-white">Clínica física e atendimento domiciliar</h3>
             <p className="text-sm text-slate-600 dark:text-slate-400 font-medium leading-relaxed mb-6 flex-grow">
-              Tratamos a pessoa, não só a ferida. Abordagem integral e personalizada.
+              Você escolhe onde ser atendido, nossa clínica em Mogi das Cruzes ou no conforto da sua casa.
             </p>
           </div>
         </div>

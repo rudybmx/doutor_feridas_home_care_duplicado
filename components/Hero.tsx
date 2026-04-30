@@ -21,68 +21,66 @@ const Hero: React.FC = () => {
           <Reveal delay={200}>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-black leading-tight md:leading-[1.1] mb-4 md:mb-6 text-secondary dark:text-white">
               <span className="block text-secondary dark:text-white tracking-tighter font-inter font-black">
-                Tratamento especializado de <span className="text-accent font-black">feridas crônicas</span> na sua casa.
+                Tratamento especializado de <span className="text-accent font-black">feridas crônicas</span>, na sua casa ou na nossa clínica.
               </span>
             </h1>
           </Reveal>
 
           <Reveal delay={300}>
             <p className="text-base md:text-lg text-slate-600 dark:text-slate-400 mb-6 md:mb-8 max-w-md leading-relaxed">
-              Sem sair de casa. Sem fila. Sem hospital. Nosso <strong className="font-bold">enfermeiro especialista</strong> vai até você com <strong className="font-bold">tecnologia laser</strong>, curativos avançados e o protocolo validado pelo Doutor Feridas.
+              Sem fila. Sem deslocamento desnecessário. Nossa <strong className="font-bold">especialista</strong> vai até você, ou te recebe com toda a estrutura em Mogi das Cruzes. <strong className="font-bold">Tecnologia laser</strong>, curativos avançados e protocolo validado.
             </p>
           </Reveal>
 
           <Reveal delay={400}>
             <div className="flex flex-col sm:flex-row items-center gap-6">
               <a 
-                href="https://wa.me/5511970925217?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o"
+                href="https://wa.me/5511915523329?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="
                 relative overflow-hidden
                 bg-gradient-to-r from-secondary to-primary
                 text-white
-                px-8 py-4 rounded-full
-                font-bold text-lg
-                whitespace-nowrap
-                shadow-[0_10px_25px_-5px_rgba(30,136,201,0.4)]
-                hover:shadow-[0_20px_35px_-5px_rgba(30,136,201,0.5)]
-                hover:-translate-y-1
-                transition-all duration-300
-                group
-                w-full sm:w-auto
-                flex items-center justify-center gap-3
-                border-t border-white/20
-              ">
-                <span className="relative z-10">Solicitar Atendimento</span>
-                <span className="material-symbols-rounded relative z-10 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                 px-14 py-4 rounded-full
+                 font-bold text-xl
+                 whitespace-nowrap
+                 shadow-[0_10px_25px_-5px_rgba(30,136,201,0.4)]
+                 hover:shadow-[0_20px_35px_-5px_rgba(30,136,201,0.5)]
+                 hover:-translate-y-1
+                 transition-all duration-300
+                 group
+                 w-full sm:w-auto
+                 flex items-center justify-center gap-3
+                 border-t border-white/20
+               ">
+                 <span className="relative z-10 text-xl font-bold">Solicitar Atendimento</span>
+                 <span className="material-symbols-rounded relative z-10 group-hover:translate-x-1 transition-transform text-2xl">arrow_forward</span>
                 {/* Shine effect overlay */}
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
               </a>
               
-              <div className="flex items-center gap-3 w-full sm:w-auto justify-center sm:justify-start">
-                <div className="flex -space-x-4">
+              <div className="flex items-center gap-6 w-full sm:w-auto justify-center sm:justify-start">
+                <div className="flex -space-x-3">
                   <img
                     src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=64&h=64"
                     alt="Paciente 1"
-                    className="w-10 h-10 rounded-full border-2 border-white dark:border-slate-900 shadow-md object-cover"
+                    className="w-11 h-11 rounded-full border-2 border-white dark:border-slate-900 shadow-md object-cover"
                   />
                   <img
                     src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=64&h=64"
                     alt="Paciente 2"
-                    className="w-10 h-10 rounded-full border-2 border-white dark:border-slate-900 shadow-md object-cover"
+                    className="w-11 h-11 rounded-full border-2 border-white dark:border-slate-900 shadow-md object-cover"
                   />
                   <img
                     src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=64&h=64"
                     alt="Paciente 3"
-                    className="w-10 h-10 rounded-full border-2 border-white dark:border-slate-900 shadow-md object-cover"
+                    className="w-11 h-11 rounded-full border-2 border-white dark:border-slate-900 shadow-md object-cover"
                   />
                 </div>
-                <div className="flex flex-col justify-center leading-tight">
-                   <div className="flex items-center gap-1">
-                      <span className="text-xs font-bold text-secondary dark:text-white">Atendimento de</span>
-                   </div>
-                   <span className="text-xs font-medium text-slate-500 dark:text-slate-400">excelência no conforto do lar.</span>
+                <div className="flex flex-col justify-center leading-tight pl-1">
+                   <span className="text-sm font-bold text-secondary dark:text-white whitespace-nowrap">Atendimento domiciliar</span>
+                   <span className="text-xs font-medium text-slate-500 dark:text-slate-400 whitespace-nowrap">e presencial, segunda a sexta.</span>
                 </div>
               </div>
             </div>

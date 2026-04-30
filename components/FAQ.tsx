@@ -3,28 +3,28 @@ import { Reveal } from './Reveal';
 
 const faqData = [
   {
-    question: "Como funciona o curativo domiciliar do Doutor Feridas Home Care?",
-    answer: "Nossa equipe especializada vai até sua residência, realiza uma avaliação completa da ferida e define o melhor tratamento utilizando tecnologias avançadas como laserterapia e curativos especiais."
+    question: "Como funciona o tratamento de feridas da Doutor Feridas Mogi das Cruzes?",
+    answer: "Realizamos avaliação completa da ferida, identificamos a causa raiz e aplicamos o protocolo mais adequado, com laserterapia, curativos avançados e acompanhamento contínuo. Atendemos na nossa clínica em Mogi das Cruzes ou na sua casa."
   },
   {
-    question: "Quanto custa o atendimento domiciliar de feridas?",
-    answer: "O valor varia de acordo com o tipo de lesão e o tratamento necessário. Entre em contato conosco para agendarmos uma avaliação."
+    question: "Quanto custa o atendimento?",
+    answer: "O valor varia conforme o tipo de tratamento e frequência. A primeira avaliação é gratuita, entre em contato para saber mais."
   },
   {
-    question: "Vocês atendem em qual região?",
-    answer: "Atendemos nas regiões próximas às nossas unidades. Entre em contato via WhatsApp para confirmar se o seu endereço é atendido pela nossa equipe de Home Care."
+    question: "Vocês atendem em domicílio e na clínica?",
+    answer: "Sim. Você pode ser atendido na nossa clínica em Mogi das Cruzes ou solicitar o atendimento domiciliar. O atendimento é de segunda a sexta-feira."
   },
   {
-    question: "O plano de saúde cobre o tratamento domiciliar de feridas?",
-    answer: "Trabalhamos na modalidade particular, mas emitimos nota fiscal para que você possa solicitar o reembolso junto ao seu convênio, caso ele ofereça essa opção."
+    question: "O plano de saúde cobre o tratamento?",
+    answer: "Atualmente trabalhamos com pagamento particular. Entre em contato para conhecer as condições e formas de pagamento disponíveis."
   },
   {
     question: "Em quanto tempo consigo agendar o primeiro atendimento?",
-    answer: "Nossa equipe tem como prioridade a agilidade. Assim que entrar em contato, buscaremos o horário mais próximo possível na nossa agenda para iniciar seu tratamento."
+    answer: "Retornamos em até 1 hora após o contato para agendar a avaliação, de segunda a sexta-feira."
   },
   {
-    question: "O curativo domiciliar funciona para feridas complexas como pé diabético e escara?",
-    answer: "Sim. Nossos protocolos e as tecnologias utilizadas (como laser e coberturas inteligentes) são exatamente desenvolvidos para lidar com feridas crônicas e de difícil cicatrização."
+    question: "O tratamento funciona para feridas complexas como pé diabético e escara?",
+    answer: "Sim. Somos especializados justamente nos casos mais complexos, pé diabético, escaras, úlceras venosas e feridas pós-cirúrgicas que não evoluíram com tratamento convencional."
   }
 ];
 
@@ -46,10 +46,10 @@ const FAQ: React.FC = () => {
               FAQ
             </span>
             <h2 className="text-3xl md:text-4xl font-extrabold text-secondary dark:text-white mb-4">
-              Dúvidas sobre curativo domiciliar e atendimento em casa
+              Dúvidas sobre nosso atendimento em Mogi das Cruzes
             </h2>
             <p className="text-slate-600 dark:text-slate-400 text-sm md:text-base mb-2">
-              As perguntas mais frequentes de quem está considerando o tratamento de feridas em casa.
+              As perguntas mais frequentes de quem está considerando o tratamento especializado de feridas.
             </p>
           </Reveal>
         </div>

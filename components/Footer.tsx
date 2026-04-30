@@ -38,12 +38,12 @@ const Footer: React.FC = () => {
                 </li>
                 <li className="flex flex-col items-center md:items-end gap-2 mt-2">
                   <a 
-                    href="https://wa.me/5511970925217"
+                    href="https://wa.me/5511915523329"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 font-semibold text-secondary dark:text-blue-300 hover:text-primary transition-colors text-lg"
                   >
-                    (11) 97092-5217
+                    (11) 91552-3329
                     <span className="material-symbols-rounded text-accent text-lg">chat</span>
                   </a>
                   <a 
@@ -70,8 +70,7 @@ const Footer: React.FC = () => {
                   <span>08:00 às 18:00</span>
                 </li>
                 <li className="flex flex-col">
-                  <span className="font-bold text-secondary dark:text-slate-200 text-lg">Sábado</span>
-                  <span>08:00 às 12:00</span>
+                  <span className="text-sm text-slate-500 dark:text-slate-400 italic">Não atendemos em fins de semana e feriados.</span>
                 </li>
               </ul>
             </div>

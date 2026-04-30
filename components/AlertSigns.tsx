@@ -21,7 +21,7 @@ const AlertSigns: React.FC = () => {
         <div className="lg:text-right">
           <Reveal direction="left" delay={200}>
             <p className="text-slate-600 dark:text-slate-400 text-lg max-w-md ml-auto leading-relaxed">
-              Milhares de brasileiros convivem com <strong className="font-bold">feridas crônicas</strong> sem saber que existe um <strong className="font-bold">tratamento especializado</strong> que vai até a sua casa.
+              Milhares de brasileiros convivem com <strong className="font-bold">feridas crônicas</strong> sem saber que existe um <strong className="font-bold">tratamento especializado</strong>, na clínica ou na sua casa.
             </p>
           </Reveal>
         </div>
@@ -112,10 +112,10 @@ const AlertSigns: React.FC = () => {
           <div className="absolute bottom-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
           <div className="relative z-10 flex flex-col items-center">
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-6 max-w-2xl mx-auto">
-              Se você se identificou, o <strong className="font-bold">Doutor Feridas Home Care</strong> foi criado para você.
+              Se você se identificou, a solução está aqui. Atendemos na nossa <strong className="font-bold">clínica em Mogi das Cruzes</strong> e realizamos <strong className="font-bold">tratamento domiciliar</strong> com toda a estrutura necessária para cicatrizar o que parecia impossível.
             </h3>
             <p className="text-slate-300 mb-10 max-w-lg mx-auto">
-              O especialista vai até a sua casa com a tecnologia necessária para tratar o que outros não conseguiram.
+              Tecnologia laser, curativos avançados e acompanhamento especializado, na clínica ou na sua casa.
             </p>
             <a 
               className="
